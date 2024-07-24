@@ -1,0 +1,53 @@
+---
+import SocialMediaPill from "@/components/SocialMediaPill.astro";
+import Layout from "../layouts/Layout.astro";
+import Badge from "@/components/Badge.astro";
+import LinkedinIcon from "@/components/Icons/LinkedinIcon.astro";
+import GitHubIcon from "@/components/Icons/GitHubIcon.astro";
+import MailIcon from "@/components/Icons/MailIcon.astro";
+---
+
+<Layout title="Portfolio de Sandro || Desarrollador y Programador Web">
+  <main>
+    <section class="w-full mx-auto lg:w-[800px] py-32">
+      <h1
+        class="text-white text-5xl font-bold flex justify-center gap-x-4 pb-10"
+      >
+        Hola, soy Sandro <a
+          href="https://www.linkedin.com/in/sandro-su%C3%A1rez-aranda-76539a1b7/"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible para trabajar</Badge></a
+        >
+      </h1>
+      <h2 class="text-2xl text-wrap">
+        <span class="text-yellow-200/90 font-bold">
+          Desarrollador Web Junior</span
+        > dando sus primeros pasos en el mundo laboral.
+        <span class="text-bold text-green-300"> De Málaga, España. </span>
+        <span>
+          Dando tumbos en diferentes áreas de la programación, buscando donde
+          especializarme.
+        </span>
+      </h2>
+      <nav class="flex justify-center gap-x-4 mt-8">
+        <SocialMediaPill
+          href="https://www.linkedin.com/in/sandro-su%C3%A1rez-aranda-76539a1b7/"
+        >
+          <LinkedinIcon />
+          Linkedin
+        </SocialMediaPill>
+        <SocialMediaPill href="https://github.com/SA-Sandro">
+          <GitHubIcon />
+          Github
+        </SocialMediaPill>
+        <SocialMediaPill href="mailto:sandrosuarezaranda@gmail.com">
+          <MailIcon />
+          sandrosuarezaranda@gmail.com
+        </SocialMediaPill>
+      </nav>
+    </section>
+  </main>
+</Layout>

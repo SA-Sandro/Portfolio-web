@@ -1,13 +1,16 @@
-<header class="flex justify-between items-center p-10">
+---
+import Burguer from "@/components/Burguer.astro";
+import NavHeader from "@/components/NavHeader.astro";
+---
+
+<header class="flex justify-between items-center p-4 sm:p-10 relative">
   <img
     class="rounded-full w-12 h-12"
     src="images/foto_curriculum.jpg"
     alt="Foto Sandro"
   />
-  <nav class="flex flex-row gap-x-10">
-    <a href="/">Home</a>
-    <a href="/">About</a>
-    <a href="/">Projects</a>
-    <a href="/">Contact</a>
-  </nav>
+  <NavHeader class="hidden sm:flex flex-row gap-x-2 sm:gap-x-5" />
+  <div class="flex sm:hidden">
+    <Burguer />
+  </div>
 </header>

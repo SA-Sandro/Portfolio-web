@@ -1,10 +1,18 @@
 <div {...Astro.props}>
-  <nav>
-    <a class="p-2" href="/">Inicio</a>
-    <a class="p-2" href="/">Sobre mí</a>
-    <a class="p-2" href="#experiences">Experiencias</a>
-    <a class="p-2" href="/">Proyectos</a>
-    <a class="p-2" href="/">Contacto</a>
+  <nav class="navbar-header flex">
+    <a href="/">Inicio</a>
+    <a href="/">Sobre mí</a>
+    <a href="#experiences">Experiencias</a>
+    <a href="/">Proyectos</a>
+    <a href="/">Contacto</a>
+    <div class="flags flex justify-center items-center">
+      <div class="flag-item p-1 cursor-pointer">
+        <img src="images/icon-en.png" alt="Idioma Inglés" width="35" />
+      </div>
+      <div class="flag-item p-1 cursor-pointer">
+        <img src="images/icon-spain.png" alt="Idioma Español" width="35" />
+      </div>
+    </div>
   </nav>
   <slot name="close-container" />
 </div>
@@ -14,10 +22,18 @@
     flex-direction: column;
     margin: 0 auto;
   }
-  .nav-burguer nav a {
+  .navbar-header a {
+    margin: 0.3rem;
+    padding: 0.3rem;
+    letter-spacing: 0.2rem;
     transition: all 0.2s ease;
   }
-  .nav-burguer nav a:hover {
+
+  .navbar-header {
+    font-family: "Cooper Hewitt", sans-serif;
+  }
+  .navbar-header a:hover {
     color: rgb(254 240 138 / 0.9);
+    border-bottom: solid 1px rgb(254 240 138 / 0.9);
   }
 </style>

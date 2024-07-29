@@ -1,39 +1,40 @@
-<div {...Astro.props}>
-  <nav class="navbar-header flex">
-    <a href="/">Inicio</a>
-    <a href="/">Sobre mí</a>
-    <a href="#experiences">Experiencias</a>
-    <a href="/">Proyectos</a>
-    <a href="/">Contacto</a>
-    <div class="flags flex justify-center items-center">
-      <div class="flag-item p-1 cursor-pointer">
-        <img src="images/icon-en.png" alt="Idioma Inglés" width="35" />
-      </div>
-      <div class="flag-item p-1 cursor-pointer">
-        <img src="images/icon-spain.png" alt="Idioma Español" width="35" />
-      </div>
+<nav {...Astro.props}>
+  <a
+    class="hover:text-green-700 dark:hover:text-yellow-200/90 hover:border-b-green-600 dark:hover:border-b-yellow-300"
+    href="/">Inicio</a
+  >
+  <a class="hover:text-green-700 dark:hover:text-yellow-200/90" href="/"
+    >Sobre mí</a
+  >
+  <a
+    class="hover:text-green-700 dark:hover:text-yellow-200/90"
+    href="#experiences">Experiencias</a
+  >
+  <a class="hover:text-green-700 dark:hover:text-yellow-200/90" href="/"
+    >Proyectos</a
+  >
+  <a class="hover:text-green-700 dark:hover:text-yellow-200/90" href="/"
+    >Contacto</a
+  >
+  <div class="flags flex justify-center items-center">
+    <div class="flag-item p-1 cursor-pointer">
+      <img src="images/icon-en.png" alt="Idioma Inglés" width="35" />
     </div>
-  </nav>
-  <slot name="close-container" />
-</div>
+    <div class="flag-item p-1 cursor-pointer">
+      <img src="images/icon-spain.png" alt="Idioma Español" width="35" />
+    </div>
+  </div>
+</nav>
+<slot name="close-container" />
 <style>
-  .nav-burguer nav {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
   .navbar-header a {
     margin: 0.3rem;
     padding: 0.3rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
     transition: all 0.2s ease;
   }
 
-  .navbar-header {
-    font-family: "Cooper Hewitt", sans-serif;
-  }
   .navbar-header a:hover {
-    color: rgb(254 240 138 / 0.9);
-    border-bottom: solid 1px rgb(254 240 138 / 0.9);
+    border-bottom: solid 1px;
   }
 </style>

@@ -1,57 +1,17 @@
 ---
-import SocialMediaPill from "@/components/SocialMediaPill.astro";
 import Layout from "../layouts/Layout.astro";
-import Badge from "@/components/Badge.astro";
-import LinkedinIcon from "@/components/Icons/LinkedinIcon.astro";
-import GitHubIcon from "@/components/Icons/GitHubIcon.astro";
-import MailIcon from "@/components/Icons/MailIcon.astro";
 import SectionContainer from "@/components/SectionContainer.astro";
+import Home from "@/components/Home.astro";
 ---
 
 <Layout title="Portfolio de Sandro || Desarrollador y Programador Web">
-  <main>
-    <SectionContainer class="w-full mx-auto lg:w-[800px] p-5">
-      <div class="sm:flex justify-center gap-x-4 pb-10">
-        <h1 class="text-white text-2xl sm:text-5xl font-bold text-center">
-          Hola, soy Sandro
-        </h1>
-        <a
-          href="https://www.linkedin.com/in/sandro-su%C3%A1rez-aranda-76539a1b7/"
-          target="_blank"
-          rel="noopener"
-          class="flex justify-center items-center"
-        >
-          <Badge>Disponible para trabajar</Badge>
-        </a>
-      </div>
+  <main class="flex justify-center">
+    <div class="relative">
+      <SectionContainer class="pt-10 h-full max-w-[1650px]">
+        <Home />
+      </SectionContainer>
+    </div>
 
-      <h2 class="text-2xl text-pretty">
-        <span class="text-yellow-200/90 font-bold">
-          Desarrollador Web Junior</span
-        > dando sus primeros pasos en el mundo laboral.
-        <span class="text-bold text-green-300"> De Málaga, España. </span>
-        <span>
-          Dando tumbos en diferentes áreas de la programación, buscando donde
-          especializarme.
-        </span>
-      </h2>
-      <nav class="flex justify-center gap-x-2 mt-3 sm:mt-8">
-        <SocialMediaPill
-          href="https://www.linkedin.com/in/sandro-su%C3%A1rez-aranda-76539a1b7/"
-        >
-          <LinkedinIcon />
-          <span class="hidden sm:flex">Linkedin</span>
-        </SocialMediaPill>
-        <SocialMediaPill href="https://github.com/SA-Sandro">
-          <GitHubIcon />
-          <span class="hidden sm:flex">GitHub</span>
-        </SocialMediaPill>
-        <SocialMediaPill href="mailto:sandrosuarezaranda@gmail.com">
-          <MailIcon />
-          <span class="hidden sm:flex">sandrosuarezaranda@gmail.com</span>
-        </SocialMediaPill>
-      </nav>
-    </SectionContainer>
     <!-- <SectionContainer
       class="w-full mx-auto lg:w-[800px] mt-20 p-5"
       id="experiences"

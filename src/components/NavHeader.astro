@@ -1,31 +1,37 @@
+---
+import Languages from "./vue-components/Languages.vue";
+---
+
 <nav {...Astro.props}>
   <a
     class="hover:text-green-700 dark:hover:text-yellow-200/90 hover:border-b-green-600 dark:hover:border-b-yellow-300"
-    href="/">Inicio</a
-  >
-  <a class="hover:text-green-700 dark:hover:text-yellow-200/90" href="/"
-    >Sobre mí</a
+    href="/"
+    data-translate-key="home">Inicio</a
   >
   <a
     class="hover:text-green-700 dark:hover:text-yellow-200/90"
-    href="#experiences">Experiencias</a
+    href="/"
+    data-translate-key="about">Sobre mí</a
   >
-  <a class="hover:text-green-700 dark:hover:text-yellow-200/90" href="/"
-    >Proyectos</a
+  <a
+    class="hover:text-green-700 dark:hover:text-yellow-200/90"
+    href="#experiences"
+    data-translate-key="experiences">Experiencias</a
   >
-  <a class="hover:text-green-700 dark:hover:text-yellow-200/90" href="/"
-    >Contacto</a
+  <a
+    class="hover:text-green-700 dark:hover:text-yellow-200/90"
+    href="/"
+    data-translate-key="projects">Proyectos</a
   >
-  <div class="flags flex justify-center items-center">
-    <div class="flag-item p-1 cursor-pointer">
-      <img src="images/icon-en.png" alt="Idioma Inglés" width="35" />
-    </div>
-    <div class="flag-item p-1 cursor-pointer">
-      <img src="images/icon-spain.png" alt="Idioma Español" width="35" />
-    </div>
-  </div>
+  <a
+    class="hover:text-green-700 dark:hover:text-yellow-200/90"
+    href="/"
+    data-translate-key="contact">Contacto</a
+  >
+  <Languages client:load />
 </nav>
 <slot name="close-container" />
+
 <style>
   .navbar-header a {
     margin: 0.3rem;

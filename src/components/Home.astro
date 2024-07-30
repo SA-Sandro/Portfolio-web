@@ -12,17 +12,23 @@ import Aside from "./Aside.astro";
   <div class="mx-2">
     <h3
       class="text-3xl sm:text-4xl font-semibold text-[#333333] dark:text-white"
+      data-translate-key="greeting"
     >
       ¡Hola! Soy
     </h3>
-    <h1 class="text-4xl sm:text-6xl font-bold text-[#333333] dark:text-white">
+    <h1
+      class="text-4xl sm:text-6xl font-bold text-[#333333] dark:text-white"
+      data-translate-key="name"
+    >
       Sandro Suárez
     </h1>
     <div class="flex flex-col lg:flex-row mt-2">
       <h3
         class="text-xl sm:text-3xl font-normal text-[#6ec26e] dark:text-yellow-200/90 sm:mr-2 text-pretty"
       >
-        <span class="animated-text">Desarrollador Web Junior</span>
+        <span class="animated-text" data-translate-key="title"
+          >Desarrollador Web Junior</span
+        >
       </h3>
       <a
         href="https://www.linkedin.com/in/sandro-su%C3%A1rez-aranda-76539a1b7/"
@@ -36,6 +42,7 @@ import Aside from "./Aside.astro";
 
     <p
       class="text-md text-gray-600/90 dark:text-gray-300/90 text-pretty mt-2 max-w-lg"
+      data-translate-key="description"
     >
       Desarrollador de Aplicaciones Web con experiencia en tecnologías como Vue,
       TypeScript, PHP, Symfony, Vitest, Cypress, etc. Comprometido con el
@@ -47,12 +54,14 @@ import Aside from "./Aside.astro";
         target="_blank"
         type="button"
         class="rounded-full text-xs sm:text-base mx-1 px-6 py-1 border-2 border-[#6ec26e] dark:border-yellow-200/90 tracking-widest transition-all duration-100 ease hover:bg-gray-500/40 dark:hover:bg-gray-800/60 text-[#333333] dark:text-white"
+        data-translate-key="viewCV"
       >
         VER CV
       </a>
       <a
         type="button"
         class="rounded-full text-xs sm:text-base mx-1 px-6 py-1 border-2 border-[#6ec26e] dark:border-yellow-200/90 tracking-widest transition-all duration-200 ease-out hover:bg-gray-500/40 dark:hover:bg-gray-800/60 text-[#333333] dark:text-white"
+        data-translate-key="contactButton"
       >
         CONTACTO
       </a>

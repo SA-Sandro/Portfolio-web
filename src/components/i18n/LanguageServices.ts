@@ -1,10 +1,15 @@
 import { ui, languages } from "@/components/i18n/ui.ts";
+import LanguageStateManager from "@/utils/LanguageStateManager";
 
 class LanguageServices {
   private currentLang: string;
+  private langManager = new LanguageStateManager();
 
   constructor() {
+    document.documentElement.lang = this.langManager.getLocalStorageLang();
     this.currentLang = this.getLang();
+    this.langManager.setLocalStorageLang(this.currentLang);
+    this.updateTranslations();
   }
 
   private getLang = (): string => {
@@ -13,14 +18,14 @@ class LanguageServices {
   };
 
   public translate = (key: string): string => {
-    if (this.currentLang === languages.es)
+    if (this.langManager.getLocalStorageLang() === languages.es)
       return ui.es[key as keyof typeof ui.es];
     return ui.en[key as keyof typeof ui.en];
   };
 
   public setLang = (lang: string): void => {
-    document.documentElement.lang = lang;
     this.currentLang = lang;
+    this.langManager.setLocalStorageLang(this.currentLang);
     this.updateTranslations();
   };
 

@@ -10,5 +10,6 @@
 </template>
 <script setup>
     import LanguageServices from "@/components/i18n/LanguageServices";
+    import NavHeader from "../NavHeader.astro";
     const setLang = (lang) => LanguageServices.setLang(lang);
 </script>

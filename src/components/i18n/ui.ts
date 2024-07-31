@@ -1,3 +1,5 @@
+import type Lang from '@/utils/Types/LangInterface';
+
 export const ui = {
   es: {
     home: "Inicio",
@@ -31,7 +33,7 @@ export const ui = {
   },
 } as const;
 
-export const languages = {
+export const languages: Lang = {
   es: "es",
   en: "en",
 };

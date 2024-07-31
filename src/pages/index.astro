@@ -2,16 +2,19 @@
 import Layout from "../layouts/Layout.astro";
 import SectionContainer from "@/components/SectionContainer.astro";
 import Home from "@/components/Home.astro";
+import About from "@/components/About.astro";
 ---
 
 <Layout title="Portfolio de Sandro || Desarrollador y Programador Web">
-  <main class="flex justify-center">
-    <div class="relative">
-      <SectionContainer class="pt-10 h-full max-w-[1650px]">
-        <Home />
-      </SectionContainer>
-    </div>
-
+  <main class="flex flex-col">
+    <SectionContainer
+      class="h-[100vh] flex items-center justify-center -mt-20"
+    >
+      <Home />
+    </SectionContainer>
+    <SectionContainer class="max-w-[1650px] mx-auto">
+      <About />
+    </SectionContainer>
     <!-- <SectionContainer
       class="w-full mx-auto lg:w-[800px] mt-20 p-5"
       id="experiences"
@@ -23,4 +26,3 @@ import Home from "@/components/Home.astro";
     </SectionContainer> -->
   </main>
 </Layout>
-

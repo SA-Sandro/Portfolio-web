@@ -1,9 +1,9 @@
 ---
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
+import Background from "@/components/Background.astro";
 import "@fontsource-variable/onest";
 import "@fontsource/cooper-hewitt";
-import Background from "@/components/Background.astro";
 
 interface Props {
   title: string;
@@ -22,7 +22,7 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="flex flex-col">
+  <body class="flex flex-col relative">
     <Header />
     <slot />
     <Footer />

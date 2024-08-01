@@ -1,23 +1,46 @@
-<div {...Astro.props}>
-  <nav>
-    <a class="p-2" href="/">Inicio</a>
-    <a class="p-2" href="/">Sobre mí</a>
-    <a class="p-2" href="#experiences">Experiencias</a>
-    <a class="p-2" href="/">Proyectos</a>
-    <a class="p-2" href="/">Contacto</a>
-  </nav>
-  <slot name="close-container" />
-</div>
+---
+import Languages from "./vue-components/Languages.vue";
+---
+
+<nav {...Astro.props}>
+  <a
+    class="hover:text-green-700 dark:hover:text-yellow-200/90 hover:border-b-green-600 dark:hover:border-b-yellow-300"
+    href="/"
+    data-translate-key="home">Inicio</a
+  >
+  <a
+    class="hover:text-green-700 dark:hover:text-yellow-200/90"
+    href="/"
+    data-translate-key="about">Sobre mí</a
+  >
+  <a
+    class="hover:text-green-700 dark:hover:text-yellow-200/90"
+    href="#experiences"
+    data-translate-key="experiences">Experiencias</a
+  >
+  <a
+    class="hover:text-green-700 dark:hover:text-yellow-200/90"
+    href="/"
+    data-translate-key="projects">Proyectos</a
+  >
+  <a
+    class="hover:text-green-700 dark:hover:text-yellow-200/90"
+    href="/"
+    data-translate-key="contact">Contacto</a
+  >
+  <Languages client:only />
+</nav>
+<slot name="close-container" />
+
 <style>
-  .nav-burguer nav {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  .nav-burguer nav a {
+  .navbar-header a {
+    margin: 0.3rem;
+    padding: 0.3rem;
+    letter-spacing: 0.1rem;
     transition: all 0.2s ease;
   }
-  .nav-burguer nav a:hover {
-    color: rgb(254 240 138 / 0.9);
+
+  .navbar-header a:hover {
+    border-bottom: solid 1px;
   }
 </style>

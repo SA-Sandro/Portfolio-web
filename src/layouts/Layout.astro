@@ -1,7 +1,9 @@
 ---
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
+import Background from "@/components/Background.astro";
 import "@fontsource-variable/onest";
+import "@fontsource/cooper-hewitt";
 
 interface Props {
   title: string;
@@ -11,7 +13,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
@@ -20,34 +22,31 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="flex flex-col">
-    <div
-      class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
-    >
-    </div>
+
+  <body class="flex-col relative">
     <Header />
     <slot />
     <Footer />
+
+    <Background />
   </body>
-</html>
-<style is:global>
-  :root {
-    color-scheme: light dark;
-  }
-  html {
-    font-family: "Onest Variable", sans-serif;
-    scroll-behavior: smooth;
-  }
-
-  body {
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-  }
-
-  @media (prefers-reduced-motion: reduce) {
+  <style is:global>
     html {
-      scroll-behavior: auto;
+      font-family: "Cooper Hewitt", sans-serif;
+      scroll-behavior: smooth;
     }
-  }
-</style>
+
+    body {
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+        position: relative;
+      }
+    }
+  </style>
+</html>

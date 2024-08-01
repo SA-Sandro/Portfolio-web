@@ -1,0 +1,96 @@
+---
+import Badge from "@/components/Badge.astro";
+import Aside from "./Aside.astro";
+import ViewCv from "./vue-components/ViewCv.vue";
+---
+
+<div class="flex justify-between">
+  <div class="hidden md:flex items-end justify-end">
+    <Aside />
+  </div>
+
+  <div
+    class="flex flex-col-reverse md:flex-row justify-center items-end mx-5 sm:mx-0"
+  >
+    <div class="mx-3">
+      <h3
+        class="text-3xl sm:text-4xl font-semibold text-[#333333] dark:text-white"
+        data-translate-key="greeting"
+      >
+        ¡Hola! Soy
+      </h3>
+      <h1
+        class="text-4xl sm:text-6xl font-bold text-[#333333] dark:text-white"
+        data-translate-key="name"
+      >
+        Sandro Suárez
+      </h1>
+      <div class="flex flex-col lg:flex-row mt-2">
+        <h3
+          class="text-xl sm:text-3xl font-normal text-[#599b59] dark:text-yellow-200/90 sm:mr-2 text-pretty"
+        >
+          <span class="animated-text" data-translate-key="title"
+            >Desarrollador Web Junior</span
+          >
+        </h3>
+        <a
+          href="https://www.linkedin.com/in/sandro-su%C3%A1rez-aranda-76539a1b7/"
+          target="_blank"
+          rel="noopener"
+          class="flex items-center"
+        >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </div>
+
+      <p
+        class="text-md text-gray-600/90 dark:text-gray-300/90 text-pretty mt-2 max-w-lg"
+        data-translate-key="description"
+      >
+        Desarrollador de Aplicaciones Web con experiencia en tecnologías como
+        Vue, TypeScript, PHP, Symfony, Vitest, Cypress, etc. Comprometido con el
+        aprendizaje continuo y la creación de soluciones eficientes.
+      </p>
+      <div class="mt-5">
+        <ViewCv client:only/>
+        <a
+          type="button"
+          class="rounded-full text-xs sm:text-base mx-1 px-6 py-1 border-2 border-[#6ec26e] dark:border-yellow-200/90
+           tracking-widest transition-all duration-200 ease-out hover:bg-green-400/90 dark:hover:bg-yellow-200/60 text-[#333333]
+            dark:text-white cursor-pointer"
+          data-translate-key="contactButton"
+        >
+          CONTACTO
+        </a>
+      </div>
+    </div>
+    <div class="mx-3 mb-5 md:mb-0 lg:mx-10">
+      <img
+        src="images/foto_perfil.jpeg"
+        loading="lazy"
+        class="rounded-full"
+        width="350"
+        alt="Foto de perfil"
+      />
+    </div>
+  </div>
+</div>
+
+<style>
+  .animated-text {
+    white-space: nowrap;
+    border-right: 0.25rem solid;
+    display: block;
+    animation: typing 4s steps(24) infinite alternate;
+    overflow: hidden;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 105%;
+    }
+  }
+</style>

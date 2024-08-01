@@ -1,16 +1,30 @@
 ---
 import Burguer from "@/components/Burguer.astro";
 import NavHeader from "@/components/NavHeader.astro";
+import Theme from "@/components/vue-components/Theme.vue";
 ---
 
-<header class="flex justify-between items-center p-4 sm:p-10 relative">
-  <img
-    class="rounded-full w-12 h-12"
-    src="images/foto_curriculum.jpg"
-    alt="Foto Sandro"
-  />
-  <NavHeader class="hidden sm:flex flex-row gap-x-2 sm:gap-x-5" />
-  <div class="flex sm:hidden">
-    <Burguer />
+<header class="relative">
+  <div
+    class="flex justify-between items-center py-2 px-2 max-w-[1450px] mx-auto"
+  >
+    <div class="flex justify-center items-center">
+      <img
+        class="rounded-full size-16"
+        loading="lazy"
+        src="images/foto_perfil.jpeg"
+        alt="Foto Sandro"
+      />
+      <div class="flex justify-center px-5">
+        <Theme client:only />
+      </div>
+    </div>
+    <div class="hidden md:flex flex-row gap-x-2 md:gap-x-5">
+      <NavHeader class="navbar-header flex text-[#333333] dark:text-white" />
+    </div>
+
+    <div class="flex md:hidden">
+      <Burguer />
+    </div>
   </div>
 </header>

@@ -1,0 +1,24 @@
+---
+import LinkedinIcon from "@/components/Icons/LinkedinIcon.astro";
+import GitHubIcon from "@/components/Icons/GitHubIcon.astro";
+import MailIcon from "@/components/Icons/MailIcon.astro";
+import SocialMediaPill from "@/components/SocialMediaPill.astro";
+---
+
+<aside
+  class="w-20 transition-transform -translate-x-full sm:translate-x-0"
+>
+  <nav class="flex flex-col justify-center mt-3 sm:mt-8">
+    <SocialMediaPill
+      href="https://www.linkedin.com/in/sandro-su%C3%A1rez-aranda-76539a1b7/"
+    >
+      <LinkedinIcon />
+    </SocialMediaPill>
+    <SocialMediaPill href="https://github.com/SA-Sandro">
+      <GitHubIcon />
+    </SocialMediaPill>
+    <SocialMediaPill href="mailto:sandrosuarezaranda@gmail.com">
+      <MailIcon />
+    </SocialMediaPill>
+  </nav>
+</aside>

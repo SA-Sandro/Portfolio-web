@@ -1,10 +1,11 @@
 ---
 import Badge from "@/components/Badge.astro";
 import Aside from "./Aside.astro";
+import ViewCv from "./vue-components/ViewCv.vue";
 ---
 
-<div class="flex justify-between ">
-  <div class="hidden md:flex items-end justify-end  ">
+<div class="flex justify-between">
+  <div class="hidden md:flex items-end justify-end">
     <Aside />
   </div>
 
@@ -51,17 +52,7 @@ import Aside from "./Aside.astro";
         aprendizaje continuo y la creación de soluciones eficientes.
       </p>
       <div class="mt-5">
-        <a
-          href="files/cv_programador_ES.pdf"
-          target="_blank"
-          type="button"
-          class="rounded-full text-xs sm:text-base mx-1 px-6 py-1 border-2 border-[#6ec26e] dark:border-yellow-200/90
-          tracking-widest transition-all duration-100 ease-out hover:bg-green-400/90 dark:hover:bg-yellow-200/40
-           text-[#333333] dark:text-white"
-          data-translate-key="viewCV"
-        >
-          VER CV
-        </a>
+        <ViewCv client:only/>
         <a
           type="button"
           class="rounded-full text-xs sm:text-base mx-1 px-6 py-1 border-2 border-[#6ec26e] dark:border-yellow-200/90
@@ -76,6 +67,7 @@ import Aside from "./Aside.astro";
     <div class="mx-3 mb-5 md:mb-0 lg:mx-10">
       <img
         src="images/foto_perfil.jpeg"
+        loading="lazy"
         class="rounded-full"
         width="350"
         alt="Foto de perfil"

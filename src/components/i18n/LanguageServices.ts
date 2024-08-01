@@ -32,7 +32,7 @@ class LanguageServices {
   private updateTranslations = (): void => {
     document.querySelectorAll("[data-translate-key]").forEach((el) => {
       const key = el.getAttribute("data-translate-key") || "";
-      el.textContent = this.translate(key);
+      el.innerHTML = this.translate(key);
     });
   };
 }

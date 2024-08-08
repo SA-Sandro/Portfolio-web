@@ -6,7 +6,15 @@
         :key="formation.id"
         class="mb-10 ms-4"
       >
-        <FormationItem v-bind:formation="formation" />
+        <span
+          class="absolute flex items-center justify-center -start-[0.9rem] p-1 rounded-full dark:ring-gray-900 dark:bg-[#1C2128]"
+        >
+          <BookIcon class="hidden stroke-red-200/90 dark:block size-5" />
+          <BookIcon class="block stroke-black dark:hidden size-5" />
+        </span>
+        <div class="bg-white dark:bg-[#1C2128] p-5 rounded-md ml-1">
+          <FormationItem v-bind:formation="formation" />
+        </div>
       </li>
     </ol>
   </div>
@@ -17,6 +25,7 @@ import { useStore } from "@nanostores/vue";
 import { ref, watch } from "vue";
 import { $formations } from "@/stores/formations";
 import FormationItem from "@/components/vue-components/FormationItem.vue";
+import BookIcon from "@/components/Icons/BookIcon.vue";
 
 const formations = ref([]);
 const divKey = ref(0);

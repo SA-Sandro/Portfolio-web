@@ -119,9 +119,9 @@ export const EXPERIENCES: Experience = {
 export const FORMATIONS: Formations = {
   es: [
     {
-      title: "Técnico Superior en Gestión Forestal y del Medio Natural",
-      institution: "Universidad Laboral de Málaga",
-      date: "2018-2021",
+      title: "Técnico Superior en Desarrollo de Aplicaciones Web",
+      institution: "MEDAC",
+      date: "2022-2024",
     },
     {
       title: "Técnico Superior en Educación y Control Ambiental",
@@ -129,16 +129,16 @@ export const FORMATIONS: Formations = {
       date: "2020-2022",
     },
     {
-      title: "Técnico Superior en Desarrollo de Aplicaciones Web",
-      institution: "MEDAC",
-      date: "2022-2024",
+      title: "Técnico Superior en Gestión Forestal y del Medio Natural",
+      institution: "Universidad Laboral de Málaga",
+      date: "2018-2021",
     },
   ],
   en: [
     {
-      title: "Higher Technician in Forestry and Environmental Management",
-      institution: "Universidad Laboral de Málaga",
-      date: "2018-2021",
+      title: "Higher Technician in Web Applications Development",
+      institution: "MEDAC",
+      date: "2022-2024",
     },
     {
       title: "Higher Technician in Environmental Education and Control",
@@ -146,9 +146,9 @@ export const FORMATIONS: Formations = {
       date: "2020-2022",
     },
     {
-      title: "Higher Technician in Web Applications Development",
-      institution: "MEDAC",
-      date: "2022-2024",
+      title: "Higher Technician in Forestry and Environmental Management",
+      institution: "Universidad Laboral de Málaga",
+      date: "2018-2021",
     },
   ],
 };

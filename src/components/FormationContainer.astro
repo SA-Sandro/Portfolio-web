@@ -1,0 +1,15 @@
+---
+import Formation from "@/components/vue-components/Formation.vue";
+import BookIcon from "@/components/Icons/BookIcon.astro";
+---
+
+<div class="p-5">
+  <h3
+    class="text-4xl text-[#333333] dark:text-white pb-10 flex items-center justify-center"
+  >
+    <BookIcon />
+    <span class="ml-2" data-translate-key="titleFormation">Formación</span
+    >
+  </h3>
+  <Formation client:only />
+</div>

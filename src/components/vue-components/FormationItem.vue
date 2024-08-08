@@ -6,27 +6,26 @@
     <time
       class="mb-1 text-sm font-normal leading-none text-blue-900 dark:text-sky-200/70"
     >
-      {{ experience.date }}
+      {{ formation.title }}
     </time>
     <h3 class="text-lg text-[#3b683b] dark:text-yellow-200/90">
-      {{ experience.title }}
+      {{ formation.institution }}
     </h3>
     <p
       class="mb-4 text-base font-normal text-pretty max-w-xl text-[#333333] dark:text-gray-200"
     >
-      {{ experience.description }}
+      {{ formation.date }}
     </p>
   </div>
 </template>
-
 <script setup>
 
 const props = defineProps({
-  experience: {
+  formation: {
     type: Object,
     required: true,
   },
 });
 
-const experience = props.experience;
+const formation = props.formation;
 </script>

@@ -4,7 +4,9 @@ import NavHeader from "@/components/NavHeader.astro";
 import Theme from "@/components/vue-components/Theme.vue";
 ---
 
-<header class="fixed top-0 w-full bg-[#BCD39C]/70 dark:bg-gray-900/90 z-40">
+<header
+  class="fixed top-0 w-full z-50 backdrop-blur-2xl bg-slate-300/20 dark:bg-transparent"
+>
   <div
     class="flex justify-between items-center py-2 px-2 max-w-[1450px] mx-auto"
   >
@@ -20,7 +22,7 @@ import Theme from "@/components/vue-components/Theme.vue";
       </div>
     </div>
     <div class="hidden md:flex flex-row gap-x-2 md:gap-x-5">
-      <NavHeader class="navbar-header flex text-[#333333] dark:text-white" />
+      <NavHeader class="navbar-header flex text-[#000000] dark:text-white" />
     </div>
 
     <div class="flex md:hidden">

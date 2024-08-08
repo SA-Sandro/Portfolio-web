@@ -5,26 +5,27 @@ import { EXPERIENCES } from "@/components/i18n/ui.ts";
 import { $experiences } from "@/stores/experiences.ts";
 
 class LanguageServices {
-  private currentLang = ref(document.documentElement.lang);
   private langManager = new LanguageStateManager();
   public experiences = ref<Object>({});
+  private currentLang = this.langManager.getLocalStorageLang() || "es";
 
   constructor() {
-    document.documentElement.lang = this.langManager.getLocalStorageLang()
-      ? this.langManager.getLocalStorageLang()
-      : "es";
+    document.documentElement.lang =
+      this.langManager.getLocalStorageLang() !== undefined
+        ? this.langManager.getLocalStorageLang()
+        : "es";
     this.updateTranslations();
   }
 
   private translate = (key: string): string => {
-    if (this.currentLang.value === languages.es)
+    if (this.currentLang === languages.es)
       return ui.es[key as keyof typeof ui.es];
     return ui.en[key as keyof typeof ui.en];
   };
 
   public setLang = (lang: string): void => {
-    this.currentLang.value = lang;
-    document.documentElement.lang = lang;
+    this.currentLang = lang;
+    document.documentElement.lang = this.currentLang;
     this.langManager.setLocalStorageLang(lang);
     this.updateTranslations();
   };

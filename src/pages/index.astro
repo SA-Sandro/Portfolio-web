@@ -3,7 +3,8 @@ import Layout from "@/layouts/Layout.astro";
 import SectionContainer from "@/components/SectionContainer.astro";
 import Home from "@/components/Home.astro";
 import About from "@/components/About.astro";
-import Experiencie from "@/components/Experiencie.vue";
+import ExperiencesSection from "@/components/ExperiencesSection.astro";
+import BriefcaseIcon from "@/components/Icons/BriefcaseIcon.vue";
 ---
 
 <Layout title="Portfolio de Sandro || Desarrollador y Programador Web">
@@ -21,7 +22,7 @@ import Experiencie from "@/components/Experiencie.vue";
       class="max-w-[900px] lg:h-screen mx-auto mt-20 p-5 flex flex-col justify-center items-center"
       id="experiences"
     >
-      <Experiencie client:only />
+      <ExperiencesSection />
     </SectionContainer>
   </main>
 </Layout>

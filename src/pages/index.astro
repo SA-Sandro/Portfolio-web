@@ -3,26 +3,25 @@ import Layout from "@/layouts/Layout.astro";
 import SectionContainer from "@/components/SectionContainer.astro";
 import Home from "@/components/Home.astro";
 import About from "@/components/About.astro";
+import Experiencie from "@/components/Experiencie.vue";
 ---
 
 <Layout title="Portfolio de Sandro || Desarrollador y Programador Web">
   <main class="">
     <SectionContainer
+      id="home"
       class="lg:h-screen mt-20 lg:mt-10 flex items-center justify-center"
     >
       <Home />
     </SectionContainer>
-    <SectionContainer class="mt-20 mx-auto">
+    <SectionContainer id="about-me" class="mt-20 mx-auto lg:h-screen">
       <About />
     </SectionContainer>
-    <!-- <SectionContainer
-      class="w-full mx-auto lg:w-[800px] mt-20 p-5"
+    <SectionContainer
+      class="max-w-[900px] lg:h-screen mx-auto mt-20 p-5 flex flex-col justify-center items-center"
       id="experiences"
     >
-      <h2 class="text-2xl font-semibold pb-4 flex items-center gap-x-3">
-        <BriefCaseIcon class="size-8" /> Experiencia laboral
-      </h2>
-      <Experiencie />
-    </SectionContainer> -->
+      <Experiencie client:only />
+    </SectionContainer>
   </main>
 </Layout>

@@ -3,7 +3,7 @@ import type Lang from "@/utils/Types/LangInterface";
 export const ui = {
   es: {
     home: "Inicio",
-    about: "Acerca de",
+    about: "Sobre mí",
     experiences: "Experiencias",
     projects: "Proyectos",
     contact: "Contactos",
@@ -27,6 +27,7 @@ export const ui = {
         <span class="text-[#599b59] dark:text-yellow-200/90">divulgación científica</span>. Además, desde que descubrí el desarrollo web, 
         me encanta crear proyectos personales y aprender nuevas tecnologías.
       </p>`,
+    titleWorkExperiences: "Experiencia Laboral",
   },
   en: {
     home: "Home",
@@ -54,8 +55,70 @@ export const ui = {
         <span class="text-[#599b59] dark:text-yellow-200/90">scientific divulgation</span>. Additionally, since discovering web development, 
         I love creating personal projects and learning new technologies.
       </p>`,
+    titleWorkExperiences: "Work Experiences",
   },
 } as const;
+
+export const EXPERIENCES = {
+  es: [
+    {
+      date: "Abr 2024 - Jun 2024",
+      title: "Desarrollador Full-stack || Enreach Labs",
+      description:
+        "Mi principal responsabilidad en Enreach Labs fue la creación de una biblioteca virtual para la empresa junto a un equipo de trabajo. Este proyecto me permitió profundizar en diferentes tecnologías, arquitecturas y patrones de diseño",
+      link: "",
+    },
+    {
+      date: "Jun 2023 - Nov 2024",
+      title: "Técnico Especialista",
+      description: "Identificación de artrópodos de suelos",
+      link: "",
+    },
+    {
+      date: "Jun 2022 - Jun 2023",
+      title: "Educador Ambiental",
+      description:
+        "Desarrollo de talleres educativos sobre diversas temáticas ambientales y creación de material didáctico para su implementación. Impartición de talleres ambientales en los municipios de Vélez-Málaga, Campillos y labor como educador ambiental en el CIR Valsequillo en Antequera",
+      link: "",
+    },
+    {
+      date: "Ago 2021 - Feb 2022",
+      title: "Auxiliar administrativo",
+      description:
+        "Ejecución de inventarios del mobiliario urbano en diversos municipios de Andalucía, con énfasis en Vélez Málaga y alrededores de la Axarquía. Análisis y digitalización de datos recopilados durante los inventarios utilizando el software QGIS",
+      link: "",
+    },
+  ],
+  en: [
+    {
+      date: "Apr 2024 - Jun 2024",
+      title: "Full-stack Developer || Enreach Labs",
+      description:
+        "My main responsibility at Enreach Labs was the creation of a virtual library for the company along with a team. This project allowed me to delve into different technologies, architectures, and design patterns",
+      link: "",
+    },
+    {
+      date: "Jun 2023 - Nov 2024",
+      title: "Specialist Technician",
+      description: "Identification of soil arthropods",
+      link: "",
+    },
+    {
+      date: "Jun 2022 - Jun 2023",
+      title: "Environmental Educator",
+      description:
+        "Development of educational workshops on various environmental topics and creation of didactic material for their implementation. Conducting environmental workshops in the municipalities of Vélez-Málaga, Campillos, and work as an environmental educator at CIR Valsequillo in Antequera",
+      link: "",
+    },
+    {
+      date: "Aug 2021 - Feb 2022",
+      title: "Administrative Assistant",
+      description:
+        "Execution of inventories of urban furniture in various municipalities of Andalusia, with an emphasis on Vélez Málaga and the surroundings of the Axarquía. Analysis and digitization of data collected during the inventories using QGIS software",
+      link: "",
+    },
+  ],
+};
 
 export const languages: Lang = {
   es: "es",

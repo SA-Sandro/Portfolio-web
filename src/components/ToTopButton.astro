@@ -1,0 +1,30 @@
+---
+import ToTopIcon from "@/components/Icons/ToTopIcon.astro";
+---
+
+<button
+  class="p-2 fixed bottom-5 right-5 bg-white border-solid border-black border-2 rounded-full transition-all duration-200"
+  id="toTop"
+>
+  <ToTopIcon />
+</button>
+
+<style>
+  #toTop:not(.is-visible) {
+    pointer-events: none;
+    opacity: 0;
+    scale: 0;
+  }
+</style>
+
+<script>
+  const toTopButton = document.querySelector("#toTop") as HTMLButtonElement;
+  toTopButton.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+  window.onscroll = (): void => {
+    toTopButton.classList[
+      document.documentElement.scrollTop > 200 ? "add" : "remove"
+    ]("is-visible");
+  };
+</script>

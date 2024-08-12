@@ -3,26 +3,65 @@ import Layout from "@/layouts/Layout.astro";
 import SectionContainer from "@/components/SectionContainer.astro";
 import Home from "@/components/Home.astro";
 import About from "@/components/About.astro";
-import ExperiencesSection from "@/components/ExperiencesSection.astro";
-import BriefcaseIcon from "@/components/Icons/BriefcaseIcon.vue";
+import ExperiencesContainer from "@/components/ExperiencesContainer.astro";
+import FormationContainer from "@/components/FormationContainer.astro";
+import CertificatesContainer from "@/components/CertificatesContainer.astro";
 ---
 
 <Layout title="Portfolio de Sandro || Desarrollador y Programador Web">
-  <main class="">
+  <main>
     <SectionContainer
       id="home"
-      class="lg:h-screen mt-20 lg:mt-10 flex items-center justify-center"
+      class="flex items-center justify-center lg:h-screen pt-20"
     >
       <Home />
     </SectionContainer>
-    <SectionContainer id="about-me" class="mt-20 mx-auto lg:h-screen">
+    <SectionContainer
+      id="about-me"
+      class="lg:h-screen mx-auto flex flex-col justify-center items-center"
+    >
       <About />
     </SectionContainer>
+
+    <SectionContainer class="mx-auto pt-28" id="experiences"
+      ><div class="flex flex-col justify-center sm:flex-row">
+        <ExperiencesContainer />
+        <FormationContainer />
+      </div>
+      <div class="text-center">
+        <button
+          class="rounded-full text-xs sm:text-base mx-1 px-6 py-1 border-2 border-[#6ec26e] dark:border-yellow-200/90
+           tracking-widest transition-all duration-200 ease-out hover:bg-green-400/90 dark:hover:bg-yellow-200/60 text-[#333333]
+            dark:text-white cursor-pointer"
+          id="certificates-button"
+        >
+          Mostrar certificados</button
+        >
+      </div>
+    </SectionContainer>
+
     <SectionContainer
-      class="max-w-[900px] lg:h-screen mx-auto mt-20 p-5 flex flex-col justify-center items-center"
-      id="experiences"
+      class="certificates-section lg:h-screen mx-auto opacity-0 -translate-x-96 justify-center items-center max-w-[70rem] duration-200 transition-all"
     >
-      <ExperiencesSection />
+      <CertificatesContainer />
     </SectionContainer>
   </main>
 </Layout>
+<style>
+  .show {
+    opacity: 1;
+    transform: translate(0);
+  }
+</style>
+<script>
+  const showCertificatesButton: HTMLButtonElement = document.querySelector(
+    "#certificates-button"
+  )!;
+  const certificatesSection: HTMLElement = document.querySelector(
+    ".certificates-section"
+  )!;
+
+  showCertificatesButton.addEventListener("click", () => {
+    certificatesSection.classList.toggle("show");
+  });
+</script>

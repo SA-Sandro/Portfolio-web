@@ -1,8 +1,13 @@
 import { ref } from "vue";
-import { ui, languages } from "@/components/i18n/ui.ts";
+import {
+  ui,
+  languages,
+  FORMATIONS,
+  EXPERIENCES,
+} from "@/components/i18n/ui.ts";
 import LanguageStateManager from "@/utils/LanguageStateManager.ts";
-import { EXPERIENCES } from "@/components/i18n/ui.ts";
 import { $experiences } from "@/stores/experiences.ts";
+import { $formations } from "@/stores/formations";
 
 class LanguageServices {
   private langManager = new LanguageStateManager();
@@ -33,6 +38,11 @@ class LanguageServices {
   private updateTranslations = (): void => {
     this.setDataTranslateKey();
     this.setTranslatedExperiences();
+    this.setTranslatedFormations();
+  };
+
+  private setTranslatedFormations = (): void => {
+    $formations.set(this.getTranslatedFormations());
   };
 
   private setTranslatedExperiences = (): void => {
@@ -43,6 +53,12 @@ class LanguageServices {
     return this.langManager.getLocalStorageLang() === languages.es
       ? EXPERIENCES.es
       : EXPERIENCES.en;
+  };
+
+  public getTranslatedFormations = (): Object => {
+    return this.langManager.getLocalStorageLang() === languages.es
+      ? FORMATIONS.es
+      : FORMATIONS.en;
   };
 
   private setDataTranslateKey = (): void => {

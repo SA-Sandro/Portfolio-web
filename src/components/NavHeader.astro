@@ -2,30 +2,30 @@
 import Languages from "./vue-components/Languages.vue";
 ---
 
-<nav {...Astro.props}>
+<nav {...Astro.props} class="navbar-header">
   <a
-    class="anchor-element hover:text-green-700 transition-all duration-200 ease-out dark:hover:text-yellow-200/90 border-solid border-b-[1px] border-b-green-600 dark:border-b-yellow-300"
+    class="anchor-element hover:text-green-700 transition-colors duration-200 ease-out dark:hover:text-yellow-200/90"
     href="#home"
     data-translate-key="home">Inicio</a
   >
   <a
-    class="anchor-element hover:text-green-700 transition-all duration-200 ease-out dark:hover:text-yellow-200/90"
+    class="anchor-element hover:text-green-700 transition-colors duration-200 ease-out dark:hover:text-yellow-200/90"
     href="#about-me"
     data-translate-key="about">Sobre mí</a
   >
   <a
-    class="anchor-element hover:text-green-700 transition-all duration-200 ease-out dark:hover:text-yellow-200/90"
+    class="anchor-element hover:text-green-700 transition-colors duration-200 ease-out dark:hover:text-yellow-200/90"
     href="#experiences"
     data-translate-key="experiences">Experiencias</a
   >
   <a
-    class="anchor-element hover:text-green-700 transition-all duration-200 ease-out dark:hover:text-yellow-200/90"
-    href=""
+    class="anchor-element hover:text-green-700 transition-colors duration-200 ease-out dark:hover:text-yellow-200/90"
+    href="#projects"
     data-translate-key="projects">Proyectos</a
   >
   <a
-    class="anchor-element hover:text-green-700 transition-all duration-200 ease-out dark:hover:text-yellow-200/90"
-    href=""
+    class="anchor-element hover:text-green-700 transition-colors duration-200 ease-out dark:hover:text-yellow-200/90"
+    href="#contact"
     data-translate-key="contact">Contacto</a
   >
   <Languages client:only />
@@ -38,31 +38,18 @@ import Languages from "./vue-components/Languages.vue";
     padding: 0.3rem;
     letter-spacing: 0.1rem;
   }
+  .active {
+    border-bottom: 1px solid;
+    color: rgb(33, 85, 31);
+  }
+
+  .active-dark-mode {
+    border-bottom: 1px solid;
+    color: rgb(254 240 138 / 0.9);
+  }
 </style>
 
 <script>
-  document.querySelectorAll(".anchor-element").forEach((anchor) => {
-    anchor.addEventListener("click", () => {
-      document
-        .querySelectorAll(".anchor-element")
-        .forEach((el) =>
-          el.classList.remove(
-            "border-solid",
-            "border-b-[1px]",
-            "text-green-700",
-            "dark:text-yellow-200/90",
-            "border-b-green-600",
-            "dark:border-b-yellow-300"
-          )
-        );
-      anchor.classList.add(
-        "border-solid",
-        "border-b-[1px]",
-        "text-green-700",
-        "dark:text-yellow-200/90",
-        "border-b-green-600",
-        "dark:border-b-yellow-300"
-      );
-    });
-  });
+  import NavBarManager from "@/utils/NavBarManager";
+  NavBarManager.getInstance();
 </script>

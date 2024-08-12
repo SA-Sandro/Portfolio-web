@@ -7,11 +7,11 @@
   >
     {{ formation.institution }}
   </h3>
-  <p
-    class="mb-4 text-base font-normal text-pretty max-w-xl text-[#333333] dark:text-gray-200"
+  <time
+    class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
   >
     {{ formation.date }}
-  </p>
+  </time>
 </template>
 <script setup>
 const props = defineProps({

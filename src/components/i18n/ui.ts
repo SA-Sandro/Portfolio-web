@@ -31,6 +31,19 @@ export const ui = {
       </p>`,
     titleWorkExperiences: "Experiencia Laboral",
     titleFormation: "Formación",
+    titleCertificates: "Certificados",
+    cert_1_title: "Curso de React para principiantes",
+    cert_1_date: "Abril 2024",
+    cert_1_link:
+      "Ver <a target='_blank' href='https://openwebinars.net/cert/mCIP'><span class='underline'>aquí</span></a>",
+    cert_2_title: "Curso de React intermedio",
+    cert_2_date: "Marzo 2024",
+    cert_2_link:
+      "Ver <a target='_blank' href='https://openwebinars.net/cert/qS28'><span class='underline'>aquí</span></a>",
+    cert_3_title: "JavaScript Algorithms and Data Structures",
+    cert_3_date: "Diciembre 2023",
+    cert_3_link:
+      "Ver <a target='_blank' href='https://www.freecodecamp.org/certification/fcc4010d557-eafe-4cb1-96f2-31d4ab5d077e/javascript-algorithms-and-data-structures'><span class='underline'>aquí</span></a>",
   },
   en: {
     home: "Home",
@@ -59,7 +72,20 @@ export const ui = {
         I love creating personal projects and learning new technologies.
       </p>`,
     titleWorkExperiences: "Work Experiences",
-    titleFormation: "Formation",
+    titleFormation: "Training",
+    titleCertificates: "Certificates",
+    cert_1_title: "Beginner React Course",
+    cert_1_date: "April 2024",
+    cert_1_link:
+      "See <a target='_blank' href='https://openwebinars.net/cert/mCIP'><span class='underline'>here</span></a>",
+    cert_2_title: "Intermediate React Course",
+    cert_2_date: "March 2024",
+    cert_2_link:
+      "See <a target='_blank' href='https://openwebinars.net/cert/qS28'><span class='underline'>here</span></a>",
+    cert_3_title: "JavaScript Algorithms and Data Structures",
+    cert_3_date: "December 2023",
+    cert_3_link:
+      "See <a target='_blank' href='https://www.freecodecamp.org/certification/fcc4010d557-eafe-4cb1-96f2-31d4ab5d077e/javascript-algorithms-and-data-structures'><span class='underline'>here</span></a>",
   },
 } as const;
 

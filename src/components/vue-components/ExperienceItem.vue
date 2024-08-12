@@ -1,9 +1,9 @@
 <template>
-  <h5
-    class="mb-1 text-sm font-normal leading-none text-blue-900 dark:text-sky-200/70"
+  <time
+    class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
   >
     {{ experience.date }}
-  </h5>
+  </time>
   <h3 class="text-lg text-[#3b683b] mt-1 dark:text-yellow-200/90">
     {{ experience.title }}
   </h3>

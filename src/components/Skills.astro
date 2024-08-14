@@ -1,0 +1,76 @@
+---
+import SkillsIcon from "@/components/Icons/SkillsIcon.astro";
+import SoftSkillsIcon from "@/components/Icons/SoftSkillsIcon.astro";
+import SkillItem from "@/components/SkillItem.astro";
+import Logos from "@/data/Skills.json";
+
+const LOGOS = Logos;
+---
+
+<div class="flex flex-col md:flex-row">
+  <div>
+    <h3
+      class="text-4xl text-[#333333] dark:text-white flex items-center justify-center"
+    >
+      <SkillsIcon class="stroke-black dark:stroke-white size-11" />
+      <span data-translate-key="tecnical_skills" class="ml-2"
+        >Habilidades técnicas</span
+      >
+    </h3>
+
+    <div class="flex flex-col justify-center items-center my-5">
+      <div class="m-5">
+        <h5
+          data-translate-key="learned"
+          class="text-3xl dark:text-yellow-200/90 mb-1 text-center"
+        >
+          Aprendidas
+        </h5>
+        <div
+          class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 items-center justify-center"
+        >
+          {
+            LOGOS.logos.learned.map((logo) => (
+              <div class="h-28 w-32 my-3 mx-5">
+                <SkillItem name={logo.name} alt={logo.alt} src={logo.src} />
+              </div>
+            ))
+          }
+        </div>
+      </div>
+      <div class="m-5">
+        <h5
+          data-translate-key="learning"
+          class="text-3xl dark:text-yellow-200/90 mb-1 text-center"
+        >
+          Aprendiendo...
+        </h5>
+
+        <div
+          class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 items-center justify-center"
+        >
+          {
+            LOGOS.logos.learning.map((logo) => (
+              <div class="h-28 w-32 my-3 mx-5">
+                <SkillItem name={logo.name} alt={logo.alt} src={logo.src} />
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <h3
+        class="text-4xl text-[#333333] dark:text-white flex items-center justify-center"
+      >
+        <SoftSkillsIcon class="stroke-black dark:stroke-white size-11" />
+        <span data-translate-key="soft_skills" class="ml-2"
+          >Habilidades blandas</span
+        >
+      </h3>
+      <div></div>
+    </div>
+  </div>
+</div>

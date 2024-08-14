@@ -7,6 +7,7 @@ export const ui = {
     home: "Inicio",
     about: "Sobre mí",
     experiences: "Experiencias",
+    skills: "Habilidades",
     projects: "Proyectos",
     contact: "Contactos",
     greeting: "¡Hola! Soy",
@@ -44,11 +45,16 @@ export const ui = {
     cert_3_date: "Diciembre 2023",
     cert_3_link:
       "Ver <a target='_blank' href='https://www.freecodecamp.org/certification/fcc4010d557-eafe-4cb1-96f2-31d4ab5d077e/javascript-algorithms-and-data-structures'><span class='underline'>aquí</span></a>",
+    tecnical_skills: "Habilidades ténicas",
+    soft_skills: "Habilidades blandas",
+    learning: "Aprendiendo...",
+    learned: "Aprendidas",
   },
   en: {
     home: "Home",
     about: "About",
     experiences: "Experiences",
+    skills: "Skills",
     projects: "Projects",
     contact: "Contact",
     greeting: "Hello! I am",
@@ -86,6 +92,10 @@ export const ui = {
     cert_3_date: "December 2023",
     cert_3_link:
       "See <a target='_blank' href='https://www.freecodecamp.org/certification/fcc4010d557-eafe-4cb1-96f2-31d4ab5d077e/javascript-algorithms-and-data-structures'><span class='underline'>here</span></a>",
+    tecnical_skills: "Tecnical skills",
+    soft_skills: "Soft skills",
+    learning: "Learning...",
+    learned: "Learned",
   },
 } as const;
 

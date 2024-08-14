@@ -1,0 +1,83 @@
+{
+  "logos": {
+    "learned": [
+      {
+        "name": "HTML5",
+        "alt": "Logo HTML5",
+        "src": "images/logos/HTML5.png"
+      },
+      {
+        "name": "JavaScript",
+        "alt": "Logo JavaScript",
+        "src": "images/logos/JavaScript.png"
+      },
+      {
+        "name": "TypeScript",
+        "alt": "Logo TypeScript",
+        "src": "images/logos/TypeScript.png"
+      },
+      {
+        "name": "Vue",
+        "alt": "Logo Vue",
+        "src": "images/logos/Vue.png"
+      },
+      {
+        "name": "PHP",
+        "alt": "Logo PHP",
+        "src": "images/logos/PHP.png"
+      },
+      {
+        "name": "Symfony",
+        "alt": "Logo Symfony",
+        "src": "images/logos/Symfony.png"
+      },
+      {
+        "name": "Bootstrap",
+        "alt": "Logo Bootstrap",
+        "src": "images/logos/Bootstrap.png"
+      },
+      {
+        "name": "Tailwind",
+        "alt": "Logo Tailwind",
+        "src": "images/logos/Tailwind.png"
+      },
+      {
+        "name": "Git",
+        "alt": "Logo Git",
+        "src": "images/logos/Git.png"
+      },
+      {
+        "name": "MySql",
+        "alt": "Logo MySql",
+        "src": "images/logos/MySql.png"
+      }
+    ],
+    "learning": [
+      {
+        "name": "Cypress",
+        "alt": "Logo Cypress",
+        "src": "images/logos/Cypress.png"
+      },
+      {
+        "name": "Cucumber",
+        "alt": "Logo Cucumber",
+        "src": "images/logos/Cucumber.png"
+      },
+      {
+        "name": "Astro",
+        "alt": "Logo Astro",
+        "src": "images/logos/Astro.png"
+      },
+      {
+        "name": "Vitest",
+        "alt": "Logo Vitest",
+        "src": "images/logos/Vitest.png"
+      },
+      {
+        "name": "Docker",
+        "alt": "Logo Docker",
+        "src": "images/logos/Docker.png"
+      }
+    ]
+  }
+}

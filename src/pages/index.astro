@@ -6,6 +6,7 @@ import About from "@/components/About.astro";
 import ExperiencesContainer from "@/components/ExperiencesContainer.astro";
 import FormationContainer from "@/components/FormationContainer.astro";
 import CertificatesContainer from "@/components/CertificatesContainer.astro";
+import Skills from "@/components/Skills.astro";
 ---
 
 <Layout title="Portfolio de Sandro || Desarrollador y Programador Web">
@@ -45,23 +46,30 @@ import CertificatesContainer from "@/components/CertificatesContainer.astro";
     >
       <CertificatesContainer />
     </SectionContainer>
-  </main>
-</Layout>
-<style>
-  .show {
-    opacity: 1;
-    transform: translate(0);
-  }
-</style>
-<script>
-  const showCertificatesButton: HTMLButtonElement = document.querySelector(
-    "#certificates-button"
-  )!;
-  const certificatesSection: HTMLElement = document.querySelector(
-    ".certificates-section"
-  )!;
 
-  showCertificatesButton.addEventListener("click", () => {
-    certificatesSection.classList.toggle("show");
-  });
-</script>
+    <SectionContainer
+      class="flex flex-col sm:flex-row justify-between mx-auto items-center max-w-[80rem]"
+      id="skills"
+    >
+      <Skills />
+    </SectionContainer>
+  </main>
+  <style>
+    .show {
+      opacity: 1;
+      transform: translate(0);
+    }
+  </style>
+  <script>
+    const showCertificatesButton: HTMLButtonElement = document.querySelector(
+      "#certificates-button"
+    )!;
+    const certificatesSection: HTMLElement = document.querySelector(
+      ".certificates-section"
+    )!;
+
+    showCertificatesButton.addEventListener("click", () => {
+      certificatesSection.classList.toggle("show");
+    });
+  </script>
+</Layout>

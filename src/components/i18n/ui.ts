@@ -7,6 +7,7 @@ export const ui = {
     home: "Inicio",
     about: "Sobre mí",
     experiences: "Experiencias",
+    skills: "Habilidades",
     projects: "Proyectos",
     contact: "Contactos",
     greeting: "¡Hola! Soy",
@@ -32,6 +33,7 @@ export const ui = {
     titleWorkExperiences: "Experiencia Laboral",
     titleFormation: "Formación",
     titleCertificates: "Certificados",
+    certificatesButton: "Mostrar certificados",
     cert_1_title: "Curso de React para principiantes",
     cert_1_date: "Abril 2024",
     cert_1_link:
@@ -44,11 +46,22 @@ export const ui = {
     cert_3_date: "Diciembre 2023",
     cert_3_link:
       "Ver <a target='_blank' href='https://www.freecodecamp.org/certification/fcc4010d557-eafe-4cb1-96f2-31d4ab5d077e/javascript-algorithms-and-data-structures'><span class='underline'>aquí</span></a>",
+    tecnical_skills: "Habilidades ténicas",
+    soft_skills: "Habilidades blandas",
+    learning: "Aprendiendo...",
+    learned: "Aprendidas",
+    sk_1: "Trabajo en equipo",
+    sk_2: "Resolutivo",
+    sk_3: "Altas dotes comunicativas",
+    sk_4: "Aprendizaje rápido",
+    sk_5: "Responsabilidad",
+    sk_6: "Adaptabilidad y flexibilidad",
   },
   en: {
     home: "Home",
     about: "About",
     experiences: "Experiences",
+    skills: "Skills",
     projects: "Projects",
     contact: "Contact",
     greeting: "Hello! I am",
@@ -74,6 +87,7 @@ export const ui = {
     titleWorkExperiences: "Work Experiences",
     titleFormation: "Training",
     titleCertificates: "Certificates",
+    certificatesButton: "Show certificates",
     cert_1_title: "Beginner React Course",
     cert_1_date: "April 2024",
     cert_1_link:
@@ -86,6 +100,16 @@ export const ui = {
     cert_3_date: "December 2023",
     cert_3_link:
       "See <a target='_blank' href='https://www.freecodecamp.org/certification/fcc4010d557-eafe-4cb1-96f2-31d4ab5d077e/javascript-algorithms-and-data-structures'><span class='underline'>here</span></a>",
+    tecnical_skills: "Tecnical skills",
+    soft_skills: "Soft skills",
+    learning: "Learning...",
+    learned: "Learned",
+    sk_1: "Teamwork",
+    sk_2: "Resolutive",
+    sk_3: "High communication skills",
+    sk_4: "Quick learning",
+    sk_5: "Responsible",
+    sk_6: "Adaptability and flexibility",
   },
 } as const;
 

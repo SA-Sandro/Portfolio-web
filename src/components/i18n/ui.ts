@@ -33,6 +33,7 @@ export const ui = {
     titleWorkExperiences: "Experiencia Laboral",
     titleFormation: "Formación",
     titleCertificates: "Certificados",
+    certificatesButton: "Mostrar certificados",
     cert_1_title: "Curso de React para principiantes",
     cert_1_date: "Abril 2024",
     cert_1_link:
@@ -49,6 +50,12 @@ export const ui = {
     soft_skills: "Habilidades blandas",
     learning: "Aprendiendo...",
     learned: "Aprendidas",
+    sk_1: "Trabajo en equipo",
+    sk_2: "Resolutivo",
+    sk_3: "Altas dotes comunicativas",
+    sk_4: "Aprendizaje rápido",
+    sk_5: "Responsabilidad",
+    sk_6: "Adaptabilidad y flexibilidad",
   },
   en: {
     home: "Home",
@@ -80,6 +87,7 @@ export const ui = {
     titleWorkExperiences: "Work Experiences",
     titleFormation: "Training",
     titleCertificates: "Certificates",
+    certificatesButton: "Show certificates",
     cert_1_title: "Beginner React Course",
     cert_1_date: "April 2024",
     cert_1_link:
@@ -96,6 +104,12 @@ export const ui = {
     soft_skills: "Soft skills",
     learning: "Learning...",
     learned: "Learned",
+    sk_1: "Teamwork",
+    sk_2: "Resolutive",
+    sk_3: "High communication skills",
+    sk_4: "Quick learning",
+    sk_5: "Responsible",
+    sk_6: "Adaptability and flexibility",
   },
 } as const;
 

@@ -22,6 +22,11 @@
         "src": "images/logos/Vue.png"
       },
       {
+        "name": "React",
+        "alt": "Logo React",
+        "src": "images/logos/React.png"
+      },
+      {
         "name": "PHP",
         "alt": "Logo PHP",
         "src": "images/logos/PHP.png"
@@ -50,6 +55,16 @@
         "name": "MySql",
         "alt": "Logo MySql",
         "src": "images/logos/MySql.png"
+      },
+      {
+        "name": "Java",
+        "alt": "Logo Java",
+        "src": "images/logos/Java.png"
+      },
+      {
+        "name": "Sqlite",
+        "alt": "Logo Sqlite",
+        "src": "images/logos/Sqlite.png"
       }
     ],
     "learning": [

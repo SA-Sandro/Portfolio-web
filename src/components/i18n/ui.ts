@@ -46,7 +46,7 @@ export const ui = {
     cert_3_date: "Diciembre 2023",
     cert_3_link:
       "Ver <a target='_blank' href='https://www.freecodecamp.org/certification/fcc4010d557-eafe-4cb1-96f2-31d4ab5d077e/javascript-algorithms-and-data-structures'><span class='underline'>aquí</span></a>",
-    tecnical_skills: "Habilidades ténicas",
+    tecnical_skills: "Habilidades técnicas",
     soft_skills: "Habilidades blandas",
     learning: "Aprendiendo...",
     learned: "Aprendidas",

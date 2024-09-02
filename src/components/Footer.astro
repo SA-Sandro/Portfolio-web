@@ -1,3 +1,53 @@
-<footer class="p-10">
-    Esto es un footer
-    </footer>
+---
+import MailIcon from "@/components/Icons/MailIcon.astro";
+import MailButton from "@/components/vue-components/MailButton.vue";
+import PhoneIcon from "@/components/Icons/PhoneIcon.astro";
+import PhoneButton from "./vue-components/PhoneButton.vue";
+import SocialMediaPill from "./SocialMediaPill.astro";
+import LinkedinIcon from "./Icons/LinkedinIcon.astro";
+import GitHubIcon from "./Icons/GitHubIcon.astro";
+---
+
+<footer class="p-5 w-full z-50 flex justify-center">
+  <div class="mt-10 w-[100rem] border-t-[1px] dark:border-t-white/10 border-t-black/30">
+    <div class="flex flex-col sm:flex-row justify-center items-center mt-10">
+      <div class="relative mx-3">
+        <div
+          class="absolute z-10 inset-y-0 start-0 flex items-center pointer-events-none"
+        >
+          <MailIcon class="size-7" />
+        </div>
+        <MailButton client:only />
+      </div>
+      <div class="relative mt-5 sm:mt-0">
+        <div
+          class="absolute z-10 inset-y-0 start-0 flex items-center pointer-events-none"
+        >
+          <PhoneIcon />
+        </div>
+        <PhoneButton client:only />
+      </div>
+    </div>
+    <div class="flex flex-col justify-center">
+      <nav class="flex justify-center mt-3 sm:mt-8">
+        <SocialMediaPill
+          href="https://www.linkedin.com/in/sandro-su%C3%A1rez-aranda-76539a1b7/"
+        >
+          <LinkedinIcon class="size-10" />
+        </SocialMediaPill>
+        <SocialMediaPill href="https://github.com/SA-Sandro">
+          <GitHubIcon class="size-10" />
+        </SocialMediaPill>
+      </nav>
+      <div class="text-sm dark:text-white text-black mx-auto">
+        Copyright © | Coded by Sandro Suárez
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .show {
+    opacity: 1;
+  }
+</style>

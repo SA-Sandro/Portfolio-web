@@ -56,6 +56,8 @@ export const ui = {
     sk_4: "Aprendizaje rápido",
     sk_5: "Responsabilidad",
     sk_6: "Adaptabilidad y flexibilidad",
+    copy: "Copiar",
+    copied: "Copiado",
   },
   en: {
     home: "Home",
@@ -110,6 +112,8 @@ export const ui = {
     sk_4: "Quick learning",
     sk_5: "Responsible",
     sk_6: "Adaptability and flexibility",
+    copy: "Copy",
+    copied: "Copied",
   },
 } as const;
 

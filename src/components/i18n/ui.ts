@@ -1,6 +1,7 @@
 import type Lang from "@/utils/Types/LangInterface";
 import type Experience from "@/utils/Types/ExperienceInterface";
 import type Formations from "@/utils/Types/FormationInterface";
+import type Projects from "@/utils/Types/ProjectInterface";
 
 export const ui = {
   es: {
@@ -58,6 +59,7 @@ export const ui = {
     sk_6: "Adaptabilidad y flexibilidad",
     copy: "Copiar",
     copied: "Copiado",
+    projectsSection: "Proyectos",
   },
   en: {
     home: "Home",
@@ -114,6 +116,7 @@ export const ui = {
     sk_6: "Adaptability and flexibility",
     copy: "Copy",
     copied: "Copied",
+    projectsSection: "Projects",
   },
 } as const;
 
@@ -203,6 +206,61 @@ export const FORMATIONS: Formations = {
       title: "Higher Technician in Forestry and Environmental Management",
       institution: "Universidad Laboral de Málaga",
       date: "2018-2021",
+    },
+  ],
+};
+
+export const PROJECTS: Projects = {
+  es: [
+    {
+      id:1,
+      title: "Portfolio Web personal",
+      image: "images/portfolio.webp",
+      description: `Un pequeño portfolio donde, además de contaros un poco más sobre mí, muestro las tecnologías en las que tengo experiencia y los proyectos en los que he ido trabajando. 
+        Destacar que, se usa LocalStorage para perdurar el estado de la aplicación y el estándar i18n para la disponibilidad de la página en Inglés y Español.`,
+      technologies: ["Astro", "Vue", "TypeScript", "Tailwind"],
+      links: {
+        githubLink: "https://github.com/SA-Sandro/Portfolio-web",
+        pageLink: "",
+      },
+    },
+    {
+      id:2,
+      title: "Tienda Online || Green Clothes ",
+      image: "images/tienda.webp",
+      description: `Un E-commerce especializado en la venta de ropa ecológica. En cuanto a sus características más destacables, encontramos un sistema de inicio de sesión y de registro de usuario, 
+        un carrito con todos los pedidos añadidos... `,
+      technologies: ["PHP", "JavaScript", "Bootstrap", "MySql"],
+      links: {
+        githubLink: "",
+        pageLink: "",
+      },
+    },
+  ],
+  en: [
+    {
+      id:1,
+      title: "Personal Portfolio Web",
+      image: "images/portfolio.webp",
+      description: `A small portfolio where, besides telling you a little more about me, I show the technologies in which I have experience and the projects in which I have been working. 
+        I would like to point out that LocalStorage is used to maintain the state of the application and the i18n standard for the availability of the page in English and Spanish.`,
+      technologies: ["Astro", "Vue", "TypeScript", "Tailwind"],
+      links: {
+        githubLink: "https://github.com/SA-Sandro/Portfolio-web",
+        pageLink: "",
+      },
+    },
+    {
+      id:2,
+      title: "Tienda Online || Green Clothes ",
+      image: "images/tienda.webp",
+      description:
+        "Un E-commerce especializado en la venta de ropa ecológica. ",
+      technologies: ["PHP", "JavaScript", "Bootstrap", "MySql"],
+      links: {
+        githubLink: "",
+        pageLink: "",
+      },
     },
   ],
 };

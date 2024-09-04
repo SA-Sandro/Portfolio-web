@@ -7,6 +7,8 @@ import ExperiencesContainer from "@/components/ExperiencesContainer.astro";
 import FormationContainer from "@/components/FormationContainer.astro";
 import CertificatesContainer from "@/components/CertificatesContainer.astro";
 import Skills from "@/components/Skills.astro";
+import Projects from "@/components/vue-components/Projects.vue";
+import CodeIcon from "@/components/Icons/CodeIcon.vue";
 ---
 
 <Layout title="Portfolio de Sandro || Desarrollador y Programador Web">
@@ -53,6 +55,18 @@ import Skills from "@/components/Skills.astro";
       id="skills"
     >
       <Skills />
+    </SectionContainer>
+    <SectionContainer class="max-w-[70rem] mx-auto" id="projects">
+      <div class="flex justify-center items-center m-10">
+        <CodeIcon customProperties="size-12" />
+        <span
+          class="dark:text-white text-4xl mx-3"
+          data-translate-key="projectsSection"
+        >
+          Proyectos
+        </span>
+      </div>
+      <Projects client:only />
     </SectionContainer>
   </main>
   <style>

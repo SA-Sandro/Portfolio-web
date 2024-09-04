@@ -4,10 +4,12 @@ import {
   languages,
   FORMATIONS,
   EXPERIENCES,
+  PROJECTS,
 } from "@/components/i18n/ui.ts";
 import LanguageStateManager from "@/utils/LanguageStateManager.ts";
-import { $experiences } from "@/stores/experiences.ts";
+import { $experiences } from "@/stores/experiences";
 import { $formations } from "@/stores/formations";
+import { $projects } from "@/stores/projects";
 
 class LanguageServices {
   private langManager = new LanguageStateManager();
@@ -39,10 +41,15 @@ class LanguageServices {
     this.setDataTranslateKey();
     this.setTranslatedExperiences();
     this.setTranslatedFormations();
+    this.setTranslatedProjects();
   };
 
   private setTranslatedFormations = (): void => {
     $formations.set(this.getTranslatedFormations());
+  };
+
+  private setTranslatedProjects = (): void => {
+    $projects.set(this.getTranslatedProjects());
   };
 
   private setTranslatedExperiences = (): void => {
@@ -53,6 +60,12 @@ class LanguageServices {
     return this.langManager.getLocalStorageLang() === languages.es
       ? EXPERIENCES.es
       : EXPERIENCES.en;
+  };
+
+  public getTranslatedProjects = (): Object => {
+    return this.langManager.getLocalStorageLang() === languages.es
+      ? PROJECTS.es
+      : PROJECTS.en;
   };
 
   public getTranslatedFormations = (): Object => {

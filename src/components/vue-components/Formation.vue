@@ -4,13 +4,12 @@
       <li
         v-for="formation in formations"
         :key="formation.id"
-        class="mb-10 ms-4"
+        class="mb-10 ms-4 px-2"
       >
         <span
-          class="absolute flex items-center justify-center -start-[0.9rem] p-1 rounded-full dark:ring-gray-900 dark:bg-[#1C2128]"
+          class="absolute flex items-center justify-center -start-[0.9rem] p-1 rounded-full ring-2 ring-yellow-400 bg-white"
         >
-          <BookIcon class="hidden stroke-red-200/90 dark:block size-5" />
-          <BookIcon class="block stroke-black dark:hidden size-5" />
+          <BookIcon class="stroke-black block size-5" />
         </span>
         <div class="bg-white dark:bg-[#1C2128] p-5 rounded-md ml-1">
           <FormationItem v-bind:formation="formation" />

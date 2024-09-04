@@ -30,7 +30,7 @@ export default class NavBarManager {
     const themeMode = themeManager.getThemeLocalStorage();
 
     this.sections.forEach((section) => {
-      let top = window.scrollY;
+      let top = window.scrollY + 200;
       let offset = section.offsetTop;
       let height = section.offsetHeight;
       let id = section.getAttribute("id");

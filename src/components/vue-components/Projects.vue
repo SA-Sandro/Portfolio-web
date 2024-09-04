@@ -1,5 +1,5 @@
 <template>
-  <div :key="divKey" class="grid grid-cols-1 sm:grid-cols-2 p-5">
+  <div :key="divKey" class="grid grid-cols-1 sm:grid-cols-2 mt-12">
     <article
       v-for="project in projects"
       class="bg-[#1C2128] rounded-xl mx-2 my-5 sm:my-0 text-white relative"

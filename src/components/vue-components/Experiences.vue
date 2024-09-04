@@ -1,5 +1,5 @@
 <template>
-  <div :key="divKey" class="flex justify-center items-center px-5">
+  <div :key="divKey" class="flex justify-center items-center px-5 mt-8">
     <ol class="relative border-s border-gray-200 dark:border-gray-700">
       <li
         v-for="experience in experiences"

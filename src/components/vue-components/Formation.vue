@@ -1,5 +1,5 @@
 <template>
-  <div :key="divKey" class="flex justify-center items-center">
+  <div :key="divKey" class="flex justify-center items-center mt-8">
     <ol class="relative border-s border-gray-200 dark:border-gray-700">
       <li
         v-for="formation in formations"

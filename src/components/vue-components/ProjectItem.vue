@@ -19,10 +19,10 @@
       class="cursor-pointer mx-2 mt-1.5 lg:mt-0"
     >
       <div
-        class="bg-yellow-200/80 text-[1rem] px-2 text-black rounded-lg flex justify-center items-center"
+        class="bg-yellow-200/80 text-[1rem] text-black rounded-lg flex justify-center items-center py-0.5"
       >
         <img
-          class="size-4 mx-2 my-2"
+          class="size-4 mx-1"
           :src="'images/logos/' + technologie + '.png'"
           :alt="technologie + ' logo'"
         />

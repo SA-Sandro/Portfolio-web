@@ -2,7 +2,7 @@
   <div :key="divKey" class="grid grid-cols-1 sm:grid-cols-2 p-5">
     <article
       v-for="project in projects"
-      class="bg-[#1C2128] rounded-xl mx-2 text-white relative"
+      class="bg-[#1C2128] rounded-xl mx-2 my-5 sm:my-0 text-white relative"
       @mouseleave="hideLinksPanel"
       @mouseenter="showLinksPanel(project.id)"
     >

@@ -15,25 +15,26 @@ import CodeIcon from "@/components/Icons/CodeIcon.vue";
   <main>
     <SectionContainer
       id="home"
-      class="flex items-center justify-center lg:h-screen pt-20"
+      class="flex items-center justify-center pt-52 pb-40"
     >
       <Home />
     </SectionContainer>
+
     <SectionContainer
       id="about-me"
-      class="lg:h-screen mx-auto flex flex-col justify-center items-center"
+      class="mx-auto flex flex-col justify-center items-center mb-28"
     >
       <About />
     </SectionContainer>
 
-    <SectionContainer class="mx-auto pt-28" id="experiences"
+    <SectionContainer class="mx-auto" id="experiences"
       ><div class="flex flex-col justify-center sm:flex-row">
         <ExperiencesContainer />
         <FormationContainer />
       </div>
       <div class="text-center">
         <button
-          class="rounded-full text-xs sm:text-base mx-1 px-6 py-1 border-2 border-[#6ec26e] dark:border-yellow-200/90
+          class="rounded-full text-md mx-1 px-6 py-1 border-2 border-[#6ec26e] dark:border-yellow-200/90
            tracking-widest transition-all duration-200 ease-out hover:bg-green-400/90 dark:hover:bg-yellow-200/60 text-[#333333]
             dark:text-white cursor-pointer"
           id="certificates-button"
@@ -45,17 +46,18 @@ import CodeIcon from "@/components/Icons/CodeIcon.vue";
     </SectionContainer>
 
     <SectionContainer
-      class="certificates-section lg:h-screen mx-auto opacity-0 -translate-x-96 justify-center items-center max-w-[70rem] duration-200 transition-all"
+      class="certificates-section mx-auto -translate-x-[50rem] opacity-0 justify-center items-center max-w-[70rem] duration-200 transition-transform"
     >
       <CertificatesContainer />
     </SectionContainer>
 
     <SectionContainer
-      class="flex flex-col sm:flex-row justify-center mx-auto items-center max-w-[80rem]"
+      class="flex flex-col sm:flex-row justify-center mx-auto items-center max-w-[80rem] mt-20 -translate-y-[60rem] sm:-translate-y-[25rem] transition-all"
       id="skills"
     >
       <Skills />
     </SectionContainer>
+
     <SectionContainer class="max-w-[70rem] mx-auto" id="projects">
       <div class="flex justify-center items-center m-10">
         <CodeIcon customProperties="size-12" />
@@ -69,12 +71,18 @@ import CodeIcon from "@/components/Icons/CodeIcon.vue";
       <Projects client:only />
     </SectionContainer>
   </main>
+
   <style>
     .show {
       opacity: 1;
       transform: translate(0);
     }
+
+    .movedown {
+      transform: translateY(0);
+    }
   </style>
+
   <script>
     const showCertificatesButton: HTMLButtonElement = document.querySelector(
       "#certificates-button"
@@ -83,8 +91,11 @@ import CodeIcon from "@/components/Icons/CodeIcon.vue";
       ".certificates-section"
     )!;
 
+    const skillsSection: HTMLElement = document.querySelector("#skills")!;
+
     showCertificatesButton.addEventListener("click", () => {
       certificatesSection.classList.toggle("show");
+      skillsSection.classList.toggle("movedown");
     });
   </script>
 </Layout>

@@ -22,15 +22,23 @@ export const ui = {
     aboutTitle: "Sobre mí",
     aboutDescr: `
       <p>
-        <span class="text-[#599b59] dark:text-yellow-200/90">Gestor Forestal, Educador Ambiental</span> y 
-        <span class="text-[#599b59] dark:text-yellow-200/90">Desarrollador de Aplicaciones Web</span>. 
-        Amante de las ciencias y de la tecnología. Soy una persona curiosa y autodidacta en aquello que me gusta.
-      </p>
-      <p class="mt-5">
-        En mi tiempo libre, me gusta dedicarme a la <span class="text-[#599b59] dark:text-yellow-200/90">entomología</span> y a la 
-        <span class="text-[#599b59] dark:text-yellow-200/90">divulgación científica</span>. Además, desde que descubrí el desarrollo web, 
-        me encanta crear proyectos personales y aprender nuevas tecnologías.
-      </p>`,
+      <span class="text-[#599b59] dark:text-yellow-200/90 text-lg">Ciencia</span
+      > y <span class="text-[#599b59] dark:text-yellow-200/90 text-lg">Tecnología</span>
+      son dos palabras que me definen a la perfección. Por un lado, soy un gran apasionado
+      de las ciencias naturales, al que le encanta explorar la naturaleza, identificando
+      animales y plantas en cada salida al campo, y, por otro lado, también me fascina la
+      tecnología y el desarrollo de software.
+    </p>
+    <p class="mt-2">
+      Antes de descubrir el mundo del desarrollo, siempre soñé con dedicarme a
+      la <span class="text-[#599b59] dark:text-yellow-200/90 text-lg"
+        >divulgación</span> e <span class="text-[#599b59] dark:text-yellow-200/90 text-lg"
+        >investigación</span> de la fauna, ya que era lo que más me
+      llenaba. Sin embargo, al adentrarme en el sector tecnológico, supe que
+      quería enfocar mi carrera en este ámbito. La frase "Si puedes soñarlo, lo
+      puedes programar" me impactó profundamente y fue lo que despertó en mí un
+      amor inmediato por la programación.
+    </p>`,
     titleWorkExperiences: "Experiencia Laboral",
     titleFormation: "Formación",
     titleCertificates: "Certificados",
@@ -78,16 +86,15 @@ export const ui = {
     contactButton: "CONTACT",
     aboutTitle: "About me",
     aboutDescr: `
-      <p>
-        <span class="text-[#599b59] dark:text-yellow-200/90">Forest Manager, Environmental Educator</span> and 
-        <span class="text-[#599b59] dark:text-yellow-200/90">Web Application Developer</span>. 
-        A lover of science and technology. I am a curious and self-taught person in what I like.
-      </p>
-      <p class="mt-5">
-        In my free time, I enjoy <span class="text-[#599b59] dark:text-yellow-200/90">entomology</span> and 
-        <span class="text-[#599b59] dark:text-yellow-200/90">scientific divulgation</span>. Additionally, since discovering web development, 
-        I love creating personal projects and learning new technologies.
-      </p>`,
+      <p> <span class="text-[#599b59] dark:text-yellow-200/90 text-lg">Science</span > and <span class="text-[#599b59] dark:text-yellow-200/90 text-lg">Technology</span> 
+      are two words that define me perfectly. On one hand, I am deeply passionate about natural sciences, and I love exploring nature, identifying animals and plants on every 
+      outdoor adventure. On the other hand, I am also fascinated by technology and software development. </p> <p class="mt-2"> Before discovering the world of development, 
+      I always dreamed of dedicating myself to the <span class="text-[#599b59] dark:text-yellow-200/90 text-lg"
+        >dissemination</span> and <span class="text-[#599b59] dark:text-yellow-200/90 text-lg"
+        >research</span> of wildlife, as it was what fulfilled me the most. However, as I delved into the tech sector, 
+      I knew that I wanted to focus my career in this field. The phrase "If you can dream it, you can program it" profoundly impacted me and sparked an immediate love 
+      for programming within me. </p>
+      `,
     titleWorkExperiences: "Work Experiences",
     titleFormation: "Training",
     titleCertificates: "Certificates",
@@ -213,7 +220,7 @@ export const FORMATIONS: Formations = {
 export const PROJECTS: Projects = {
   es: [
     {
-      id:1,
+      id: 1,
       title: "Portfolio Web personal",
       image: "images/portfolio.webp",
       description: `Un pequeño portfolio donde, además de contaros un poco más sobre mí, muestro las tecnologías en las que tengo experiencia y los proyectos en los que he ido trabajando. 
@@ -225,7 +232,7 @@ export const PROJECTS: Projects = {
       },
     },
     {
-      id:2,
+      id: 2,
       title: "Tienda Online || Green Clothes ",
       image: "images/tienda.webp",
       description: `Un E-commerce especializado en la venta de ropa ecológica. En cuanto a sus características más destacables, encontramos un sistema de inicio de sesión y de registro de usuario, 
@@ -239,7 +246,7 @@ export const PROJECTS: Projects = {
   ],
   en: [
     {
-      id:1,
+      id: 1,
       title: "Personal Portfolio Web",
       image: "images/portfolio.webp",
       description: `A small portfolio where, besides telling you a little more about me, I show the technologies in which I have experience and the projects in which I have been working. 
@@ -251,7 +258,7 @@ export const PROJECTS: Projects = {
       },
     },
     {
-      id:2,
+      id: 2,
       title: "Tienda Online || Green Clothes ",
       image: "images/tienda.webp",
       description:

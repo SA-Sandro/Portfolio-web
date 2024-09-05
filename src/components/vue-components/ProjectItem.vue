@@ -30,19 +30,21 @@
       </div>
     </div>
   </div>
-  <div
-    v-if="isHovered"
-    class="absolute bg-gray-900/60 w-full h-full top-0 flex justify-center items-center cursor-pointer"
-  >
-    <a href="" target="_blank">
-      <PageIcon />
-    </a>
-    <a :href="project.links.githubLink" target="_blank">
-      <CodeIcon
-        customProperties="size-16 hover:-translate-y-2 transition-all duration-75 ease-linear"
-      />
-    </a>
-  </div>
+  <transition name="fade">
+    <div
+      v-if="isHovered"
+      class="absolute bg-gray-900/60 w-full h-full top-0 flex justify-center items-center cursor-pointer"
+    >
+      <a href="" target="_blank">
+        <PageIcon />
+      </a>
+      <a :href="project.links.githubLink" target="_blank">
+        <CodeIcon
+          customProperties="size-16 hover:-translate-y-2 transition-all duration-75 ease-linear"
+        />
+      </a>
+    </div>
+  </transition>
 </template>
 
 <script setup>
@@ -67,3 +69,9 @@ watch(useStore($hoveredProjectId), (newVal) => {
 
 const project = props.project;
 </script>
+
+<style>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+</style>

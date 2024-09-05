@@ -72,6 +72,6 @@ const project = props.project;
 
 <style>
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 0.2s ease;
+  transition: opacity 0.1s ease;
 }
 </style>

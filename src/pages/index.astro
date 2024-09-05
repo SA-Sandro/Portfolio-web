@@ -5,11 +5,11 @@ import Home from "@/components/Home.astro";
 import About from "@/components/About.astro";
 import ExperiencesContainer from "@/components/ExperiencesContainer.astro";
 import FormationContainer from "@/components/FormationContainer.astro";
-import CertificatesContainer from "@/components/CertificatesContainer.astro";
 import Skills from "@/components/Skills.astro";
 import Projects from "@/components/vue-components/Projects.vue";
 import CodeIcon from "@/components/Icons/CodeIcon.vue";
 import TitleFormat from "@/components/TitleFormat.astro";
+import CertificatesList from "@/components/CertificatesList.astro";
 ---
 
 <Layout title="Portfolio de Sandro || Desarrollador y Programador Web">
@@ -49,24 +49,23 @@ import TitleFormat from "@/components/TitleFormat.astro";
     <SectionContainer
       class="certificates-section mx-auto -translate-x-[50rem] opacity-0 justify-center items-center max-w-[70rem] duration-200 transition-transform mb-20"
     >
-      <CertificatesContainer />
+      <div class="p-5">
+        <CertificatesList />
+      </div>
     </SectionContainer>
 
     <SectionContainer
-      class="flex flex-col sm:flex-row justify-center mx-auto items-center max-w-[80rem] -mt-[60rem] sm:-mt-[25rem] transition-all"
+      class="flex flex-col sm:flex-row justify-center mx-auto items-center max-w-[80rem] -mt-[55rem] sm:-mt-[18rem] transition-all"
       id="skills"
     >
       <Skills />
     </SectionContainer>
 
-    <SectionContainer class="max-w-[60rem] mx-auto mt-20" id="projects">
+    <SectionContainer class="mx-auto mt-20 max-w-[100rem]" id="projects">
       <TitleFormat>
         <h3 class="flex justify-center items-center" slot="section-title">
           <CodeIcon customProperties="size-12" />
-          <span
-            class="dark:text-white text-4xl ml-2"
-            data-translate-key="projectsSection"
-          >
+          <span data-translate-key="projectsSection" class="ml-2">
             Proyectos
           </span>
         </h3>

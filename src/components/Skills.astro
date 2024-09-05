@@ -10,16 +10,14 @@ const LOGOS = Logos;
 ---
 
 <div class="flex flex-col md:flex-row justify-center">
-  <div class="mx-1">
+  <div>
     <TitleFormat>
-      <div slot="section-title" class="flex justify-center items-center">
+      <h3 slot="section-title" class="flex justify-center items-center">
         <SkillsIcon class="stroke-black dark:stroke-white size-11" />
-        <span
-          data-translate-key="tecnical_skills"
-          class="text-4xl text-[#333333] dark:text-white ml-2"
+        <span data-translate-key="tecnical_skills" class="ml-2"
           >Habilidades técnicas</span
         >
-      </div>
+      </h3>
     </TitleFormat>
 
     <div class="flex flex-col justify-center items-center mb-5 mt-8">
@@ -31,11 +29,11 @@ const LOGOS = Logos;
           Con experiencia
         </h5>
         <div
-          class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 items-center justify-center"
+          class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 items-center justify-center"
         >
           {
             LOGOS.logos.learned.map((logo) => (
-              <div class="h-28 w-32 my-3 mx-5">
+              <div class="h-24 w-28 my-8 mx-4 flex justify-center flex-col">
                 <SkillItem name={logo.name} alt={logo.alt} src={logo.src} />
               </div>
             ))
@@ -55,7 +53,7 @@ const LOGOS = Logos;
         >
           {
             LOGOS.logos.learning.map((logo) => (
-              <div class="h-28 w-32 my-3 mx-5">
+              <div class="h-24 w-28 my-3 mx-5">
                 <SkillItem name={logo.name} alt={logo.alt} src={logo.src} />
               </div>
             ))
@@ -64,13 +62,10 @@ const LOGOS = Logos;
       </div>
     </div>
   </div>
-  <div class="mx-1">
+  <div class="mx-16">
     <div class="flex flex-col justify-center">
       <TitleFormat>
-        <h3
-          slot="section-title"
-          class="text-4xl text-[#333333] dark:text-white flex items-center justify-center"
-        >
+        <h3 slot="section-title" class="flex items-center justify-center">
           <SoftSkillsIcon class="stroke-black dark:stroke-white size-11" />
           <span data-translate-key="soft_skills" class="ml-2"
             >Habilidades blandas</span

@@ -35,7 +35,7 @@ const { title } = Astro.props;
     html {
       font-family: "Cooper Hewitt", sans-serif;
       scroll-behavior: smooth;
-      scroll-padding: 5rem 0 0 0;
+      scroll-padding: 10.5rem 0 0 0;
     }
 
     body {
@@ -51,3 +51,13 @@ const { title } = Astro.props;
     }
   </style>
 </html>
+<script>
+  import "aos/dist/aos.css";
+  import AOS from "aos";
+
+  AOS.init();
+
+  window.addEventListener("scroll", function () {
+    AOS.refresh();
+  });
+</script>

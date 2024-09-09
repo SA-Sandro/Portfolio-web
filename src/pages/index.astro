@@ -22,8 +22,9 @@ import CertificatesList from "@/components/CertificatesList.astro";
     </SectionContainer>
 
     <SectionContainer
+      data-aos="zoom-in"
       id="about-me"
-      class="mx-auto flex flex-col justify-center items-center mb-28"
+      class="mx-auto flex flex-col justify-center items-center mt-20"
     >
       <About />
     </SectionContainer>
@@ -61,7 +62,11 @@ import CertificatesList from "@/components/CertificatesList.astro";
       <Skills />
     </SectionContainer>
 
-    <SectionContainer class="mx-auto mt-20 max-w-[100rem]" id="projects">
+    <SectionContainer
+      class="mx-auto mt-20 max-w-[100rem]"
+      id="projects"
+      data-aos="flip-left"
+    >
       <TitleFormat>
         <h3 class="flex justify-center items-center" slot="section-title">
           <CodeIcon customProperties="size-12" />
@@ -99,5 +104,6 @@ import CertificatesList from "@/components/CertificatesList.astro";
       certificatesSection.classList.toggle("show");
       skillsSection.classList.toggle("movedown");
     });
+
   </script>
 </Layout>

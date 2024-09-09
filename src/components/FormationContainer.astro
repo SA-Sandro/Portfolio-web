@@ -4,12 +4,9 @@ import BookIcon from "@/components/Icons/BookIcon.vue";
 import TitleFormat from "./TitleFormat.astro";
 ---
 
-<div class="p-5">
+<div class="p-5" data-aos="fade-right">
   <TitleFormat>
-    <h3
-      slot="section-title"
-      class="flex items-center justify-center"
-    >
+    <h3 slot="section-title" class="flex items-center justify-center">
       <BookIcon class="stroke-black dark:stroke-white size-11" />
       <span class="ml-2" data-translate-key="titleFormation">Formación</span>
     </h3>

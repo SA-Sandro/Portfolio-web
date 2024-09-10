@@ -1,7 +1,7 @@
 <template>
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    class="size-16 mx-5 dark:stroke-white stroke-black cursor-pointer hover:-translate-y-2 transition-all duration-75 ease-linear"
+    class="size-16 mx-5 stroke-white cursor-pointer hover:-translate-y-2 transition-all duration-75 ease-linear"
     viewBox="0 0 24 24"
     stroke-width="1.5"
     fill="none"

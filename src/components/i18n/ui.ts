@@ -22,8 +22,8 @@ export const ui = {
     aboutTitle: "Sobre mí",
     aboutDescr: `
       <p>
-      <span class="text-[#599b59] dark:text-yellow-200/90 text-lg">Ciencia</span
-      > y <span class="text-[#599b59] dark:text-yellow-200/90 text-lg">Tecnología</span>
+      <span class="text-[#235da4] dark:text-yellow-200/90 text-lg">Ciencia</span
+      > y <span class="text-[#235da4] dark:text-yellow-200/90 text-lg">Tecnología</span>
       son dos palabras que me definen a la perfección. Por un lado, soy un gran apasionado
       de las ciencias naturales, al que le encanta explorar la naturaleza, identificando
       animales y plantas en cada salida al campo, y, por otro lado, también me fascina la
@@ -31,8 +31,8 @@ export const ui = {
     </p>
     <p class="mt-2">
       Antes de descubrir el mundo del desarrollo, siempre soñé con dedicarme a
-      la <span class="text-[#599b59] dark:text-yellow-200/90 text-lg"
-        >divulgación</span> e <span class="text-[#599b59] dark:text-yellow-200/90 text-lg"
+      la <span class="text-[#235da4] dark:text-yellow-200/90 text-lg"
+        >divulgación</span> e <span class="text-[#235da4] dark:text-yellow-200/90 text-lg"
         >investigación</span> de la fauna, ya que era lo que más me
       llenaba. Sin embargo, al adentrarme en el sector tecnológico, supe que
       quería enfocar mi carrera en este ámbito. La frase "Si puedes soñarlo, lo
@@ -86,11 +86,11 @@ export const ui = {
     contactButton: "CONTACT",
     aboutTitle: "About me",
     aboutDescr: `
-      <p> <span class="text-[#599b59] dark:text-yellow-200/90 text-lg">Science</span > and <span class="text-[#599b59] dark:text-yellow-200/90 text-lg">Technology</span> 
+      <p> <span class="text-[#235da4] dark:text-yellow-200/90 text-lg">Science</span > and <span class="text-[#235da4] dark:text-yellow-200/90 text-lg">Technology</span> 
       are two words that define me perfectly. On one hand, I am deeply passionate about natural sciences, and I love exploring nature, identifying animals and plants on every 
       outdoor adventure. On the other hand, I am also fascinated by technology and software development. </p> <p class="mt-2"> Before discovering the world of development, 
-      I always dreamed of dedicating myself to the <span class="text-[#599b59] dark:text-yellow-200/90 text-lg"
-        >dissemination</span> and <span class="text-[#599b59] dark:text-yellow-200/90 text-lg"
+      I always dreamed of dedicating myself to the <span class="text-[#235da4] dark:text-yellow-200/90 text-lg"
+        >dissemination</span> and <span class="text-[#235da4] dark:text-yellow-200/90 text-lg"
         >research</span> of wildlife, as it was what fulfilled me the most. However, as I delved into the tech sector, 
       I knew that I wanted to focus my career in this field. The phrase "If you can dream it, you can program it" profoundly impacted me and sparked an immediate love 
       for programming within me. </p>

@@ -7,7 +7,7 @@
         class="mb-10 ms-4 px-2"
       >
         <span
-          class="absolute flex items-center justify-center -start-[0.9rem] p-1 rounded-full ring-2 ring-yellow-400 bg-white cursor-pointer"
+          class="absolute flex items-center justify-center -start-[0.9rem] p-1 rounded-full ring-2 dark:ring-yellow-400 ring-[#235da4] bg-white cursor-pointer"
         >
           <BriefcaseIcon class="stroke-black size-5" />
         </span>

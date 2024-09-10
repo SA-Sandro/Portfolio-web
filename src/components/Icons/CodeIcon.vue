@@ -1,7 +1,7 @@
 <template>
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    :class="['dark:stroke-white stroke-black cursor-pointer', customProperties]"
+    :class="['stroke-white cursor-pointer', customProperties]"
     viewBox="0 0 24 24"
     stroke-width="1.5"
     stroke="#2c3e50"

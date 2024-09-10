@@ -4,12 +4,12 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
-      screens:{
-        "xs": "340px",
+      screens: {
+        xs: "340px",
       },
       backgroundImage: {
         "light-gradient":
-          "linear-gradient(to right, #adeb76fc 45%, #222222 100%)",
+          "linear-gradient(to right, #925c9e 60%, #222222 100%)",
         "dark-gradient":
           "linear-gradient(to right, #cfb532fc 45%, #222222 100%)",
       },

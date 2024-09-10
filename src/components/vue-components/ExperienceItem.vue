@@ -4,7 +4,7 @@
   >
     {{ experience.date }}
   </time>
-  <h3 class="text-lg text-[#3b683b] mt-1 dark:text-yellow-200/90">
+  <h3 class="text-lg text-[#39006C] mt-1 dark:text-yellow-200/90">
     {{ experience.title }}
   </h3>
   <p

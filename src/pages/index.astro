@@ -16,7 +16,7 @@ import CertificatesList from "@/components/CertificatesList.astro";
   <main>
     <SectionContainer
       id="home"
-      class="flex items-center justify-center pt-52 pb-40"
+      class="flex items-center justify-center pt-52 mb-40"
     >
       <Home />
     </SectionContainer>
@@ -24,12 +24,12 @@ import CertificatesList from "@/components/CertificatesList.astro";
     <SectionContainer
       data-aos="zoom-in"
       id="about-me"
-      class="mx-auto flex flex-col justify-center items-center mt-20"
+      class="mx-auto flex flex-col justify-center items-center my-20 scroll-m-60"
     >
       <About />
     </SectionContainer>
 
-    <SectionContainer class="mx-auto mt-48" id="experiences"
+    <SectionContainer class="mx-auto scroll-m-20" id="experiences"
       ><div class="flex flex-col justify-center sm:flex-row">
         <ExperiencesContainer />
         <FormationContainer />
@@ -48,7 +48,7 @@ import CertificatesList from "@/components/CertificatesList.astro";
     </SectionContainer>
 
     <SectionContainer
-      class="certificates-section mx-auto -translate-x-[50rem] opacity-0 justify-center items-center max-w-[70rem] duration-200 transition-transform mb-20"
+      class="certificates-section mx-auto -translate-x-[50rem] opacity-0 justify-center items-center max-w-[70rem] duration-200 transition-transform mt-10"
     >
       <div class="p-5">
         <CertificatesList />
@@ -56,20 +56,20 @@ import CertificatesList from "@/components/CertificatesList.astro";
     </SectionContainer>
 
     <SectionContainer
-      class="flex flex-col sm:flex-row justify-center mx-auto items-center max-w-[80rem] -mt-[55rem] sm:-mt-[18rem] transition-all"
+      class="flex flex-col sm:flex-row justify-center mx-auto items-center max-w-[80rem] -mt-[55rem] sm:-mt-[18rem] md:-mt-[15rem] transition-all scroll-m-28"
       id="skills"
     >
       <Skills />
     </SectionContainer>
 
     <SectionContainer
-      class="mx-auto mt-20 max-w-[100rem]"
+      class="mx-auto max-w-[100rem] my-28 scroll-m-4"
       id="projects"
       data-aos="flip-left"
     >
       <TitleFormat>
         <h3 class="flex justify-center items-center" slot="section-title">
-          <CodeIcon customProperties="size-12" />
+          <CodeIcon customProperties="size-12 dark:stroke-white stroke-black" />
           <span data-translate-key="projectsSection" class="ml-2">
             Proyectos
           </span>
@@ -86,7 +86,7 @@ import CertificatesList from "@/components/CertificatesList.astro";
     }
 
     .movedown {
-      margin-top: 0;
+      margin-top: 5rem;
     }
   </style>
 

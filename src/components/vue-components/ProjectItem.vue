@@ -40,7 +40,7 @@
       </a>
       <a :href="project.links.githubLink" target="_blank">
         <CodeIcon
-          customProperties="size-16 hover:-translate-y-2 transition-all duration-75 ease-linear"
+          customProperties="size-16 hover:-translate-y-2 transition-all duration-75 ease-linear stroke-white"
         />
       </a>
     </div>

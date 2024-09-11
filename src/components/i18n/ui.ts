@@ -16,7 +16,7 @@ export const ui = {
     title: "Desarrollador Web Junior",
     availabilityBadge: "Disponible para trabajar",
     description:
-      "Desarrollador de Aplicaciones Web con experiencia en tecnologías como Vue, TypeScript, PHP, Symfony, Vitest, Cypress, etc. Comprometido con el aprendizaje continuo y la creación de soluciones eficientes.",
+      "Desarrollador de Aplicaciones Web con experiencia en tecnologías como Vue, TypeScript, PHP, Symfony, MySql, React, etc. Comprometido con el aprendizaje continuo y la creación de soluciones eficientes.",
     viewCV: "VER CV",
     contactButton: "CONTACTO",
     aboutTitle: "Sobre mí",
@@ -81,7 +81,7 @@ export const ui = {
     title: "Junior Web Developer",
     availabilityBadge: "Available for work",
     description:
-      "Web Application Developer with experience in technologies like Vue, TypeScript, PHP, Symfony, Vitest, Cypress, etc. Committed to continuous learning and creating efficient solutions.",
+      "Web Application Developer with experience in technologies like Vue, TypeScript, PHP, Symfony, MySql, React, etc. Committed to continuous learning and creating efficient solutions.",
     viewCV: "VIEW CV",
     contactButton: "CONTACT",
     aboutTitle: "About me",

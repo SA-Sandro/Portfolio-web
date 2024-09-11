@@ -5,7 +5,7 @@
   >
     <article
       v-for="project in projects"
-      class="bg-[#1C2128] rounded-xl mx-3 md:mx-10 my-5 sm:my-0 text-white relative"
+      class="dark:bg-[#1C2128] bg-white rounded-xl mx-3 xs:mx-auto md:mx-10 my-5 sm:my-0 text-white relative max-w-[25rem] sm:max-w-[30rem]"
       @mouseleave="hideLinksPanel"
       @mouseenter="showLinksPanel(project.id)"
     >

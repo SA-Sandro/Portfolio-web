@@ -5,10 +5,10 @@
     :alt="'Imagen del proyecto: ' + project.title"
     loading="lazy"
   />
-  <h3 class="px-2 pt-2 text-2xl dark:text-yellow-200/90">
+  <h3 class="px-4 pt-2 text-2xl dark:text-yellow-200 text-violet-900">
     {{ project.title }}
   </h3>
-  <div class="px-2 py-1 text-justify">
+  <div class="px-4 py-1 text-justify text-black dark:text-white">
     {{ project.description }}
   </div>
   <div
@@ -19,7 +19,7 @@
       class="cursor-pointer mx-2 mt-1.5 lg:mt-0"
     >
       <div
-        class="bg-yellow-200/80 text-[1rem] text-black rounded-lg flex justify-center items-center py-0.5"
+        class="dark:bg-yellow-200 bg-violet-200 text-[1rem] text-black rounded-lg flex justify-center items-center py-0.5"
       >
         <img
           class="size-4 mx-1"
@@ -33,7 +33,7 @@
   <transition name="fade">
     <div
       v-if="isHovered"
-      class="absolute bg-gray-900/60 w-full h-full top-0 flex justify-center items-center cursor-pointer"
+      class="absolute bg-gray-900/60 w-full h-full top-0 flex justify-center items-center cursor-pointer rounded-lg"
     >
       <a href="" target="_blank">
         <PageIcon />

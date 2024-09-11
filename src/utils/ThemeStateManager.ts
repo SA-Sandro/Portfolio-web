@@ -7,7 +7,7 @@ class ThemeStateManager {
   }
 
   public getThemeLocalStorage(): string {
-    return localStorage.getItem("themeLocalStorage")!;
+    return localStorage.getItem("themeLocalStorage") || "dark";
   }
 
   public setLocalStorageTheme() {

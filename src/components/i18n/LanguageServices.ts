@@ -18,7 +18,7 @@ class LanguageServices {
 
   constructor() {
     document.documentElement.lang =
-      this.langManager.getLocalStorageLang() !== undefined
+      this.langManager.getLocalStorageLang() !== null
         ? this.langManager.getLocalStorageLang()
         : "es";
     this.updateTranslations();

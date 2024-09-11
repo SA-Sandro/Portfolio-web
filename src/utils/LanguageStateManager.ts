@@ -1,6 +1,6 @@
 class LanguageStateManager {
   public getLocalStorageLang = (): string => {
-    return localStorage.getItem("langLocalStorage")!;
+    return localStorage.getItem("langLocalStorage") || 'es';
   };
 
   public setLocalStorageLang = (value: string): void => {

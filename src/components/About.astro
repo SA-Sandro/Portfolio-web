@@ -1,39 +1,44 @@
 ---
 import AboutIcon from "@/components/Icons/AboutIcon.astro";
+import TitleFormat from "@/components/TitleFormat.astro";
 ---
 
 <div>
-  <h3
-    class="text-4xl text-[#333333] dark:text-white py-10 flex items-center justify-center"
-  >
-    <AboutIcon />
-    <span data-translate-key="aboutTitle">Sobre mí</span>
-  </h3>
+  <TitleFormat>
+    <h3 slot="section-title" class="flex items-center justify-center">
+      <AboutIcon />
+      <span class="ml-2" data-translate-key="aboutTitle">Sobre mí</span>
+    </h3>
+  </TitleFormat>
 </div>
 <div class="flex flex-col justify-center items-center xl:flex-row">
   <div
-    class="text-xl text-gray-600/90 dark:text-white text-pretty mt-2 max-w-2xl px-10 xl:max-w-xl tracking-widest"
+    class="text-md text-gray-600/90 dark:text-white text-pretty mt-2 max-w-2xl px-10 xl:max-w-xl tracking-widest"
     data-translate-key="aboutDescr"
   >
     <p>
-      <span class="text-[#599b59] dark:text-yellow-200/90"
-        >Gestor Forestal, Educador Ambiental</span
-      > y
-      <span class="text-[#599b59] dark:text-yellow-200/90"
-        >Desarrollador de Aplicaciones Web</span
-      >. Amante de las ciencias y de la tecnología. Soy una persona curiosa y
-      autodidacta en aquello que me gusta.
+      <span class="text-[#235da4] dark:text-yellow-200/90 text-lg">Ciencia</span
+      > y <span class="text-[#235da4] dark:text-yellow-200/90 text-lg"
+        >Tecnología</span
+      >
+      son dos palabras que me definen a la perfección. Por un lado, soy un gran apasionado
+      de las ciencias naturales, al que le encanta explorar la naturaleza, identificando
+      animales y plantas en cada salida al campo, y, por otro lado, me fascina la
+      tecnología y el desarrollo de software.
     </p>
-    <p class="mt-5">
-      En mi tiempo libre, me gusta dedicarme a la <span
-        class="text-[#599b59] dark:text-yellow-200/90">entomología</span
-      > y a la
-      <span class="text-[#599b59] dark:text-yellow-200/90"
-        >divulgación científica</span
-      >. Además, desde que descubrí el desarrollo web, me encanta crear
-      proyectos personales y aprender nuevas tecnologías.
+    <p class="mt-2">
+      Antes de descubrir el mundo del desarrollo, siempre soñé con dedicarme a
+      la <span class="text-[#235da4] dark:text-yellow-200/90 text-lg"
+        >divulgación</span
+      > e <span class="text-[#235da4] dark:text-yellow-200/90 text-lg"
+        >investigación</span
+      > de la fauna, ya que era lo que más me llenaba. Sin embargo, al adentrarme
+      en el sector tecnológico, supe que quería enfocar mi carrera en este ámbito.
+      La frase "Si puedes soñarlo, lo puedes programar" me impactó profundamente
+      y fue lo que despertó en mí un amor inmediato por la programación.
     </p>
   </div>
+
   <div
     class="flex mx-5 flex-col sm:flex-row xl:justify-center mt-10 xl:mt-0 overflow-hidden"
   >

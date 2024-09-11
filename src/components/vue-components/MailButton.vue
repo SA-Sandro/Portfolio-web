@@ -21,7 +21,7 @@
       <div
         :class="[
           'justify-center items-center',
-          { hidden: isInputCopied, flex: !isInputCopied },
+          { 'hidden': isInputCopied, 'flex': !isInputCopied },
         ]"
       >
         <CopyIcon />

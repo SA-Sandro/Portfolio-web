@@ -1,16 +1,15 @@
 <template>
-  <div :key="divKey" class="flex justify-center items-center">
+  <div :key="divKey" class="flex justify-center items-center px-5 mt-8">
     <ol class="relative border-s border-gray-200 dark:border-gray-700">
       <li
         v-for="experience in experiences"
         :key="experience.id"
-        class="mb-10 ms-4"
+        class="mb-10 ms-4 px-2"
       >
         <span
-          class="absolute flex items-center justify-center -start-[0.9rem] p-1 rounded-full dark:ring-gray-900 dark:bg-[#1C2128]"
+          class="absolute flex items-center justify-center -start-[0.9rem] p-1 rounded-full ring-2 dark:ring-yellow-400 ring-[#235da4] bg-white cursor-pointer"
         >
-          <BriefcaseIcon class="hidden stroke-red-200/90 dark:block size-5" />
-          <BriefcaseIcon class="block stroke-black dark:hidden size-5" />
+          <BriefcaseIcon class="stroke-black size-5" />
         </span>
         <div class="bg-white dark:bg-[#1C2128] p-5 rounded-md ml-1">
           <ExperiencieItem v-bind:experience="experience" />

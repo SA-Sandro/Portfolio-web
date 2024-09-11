@@ -4,35 +4,36 @@ import SoftSkillsIcon from "@/components/Icons/SoftSkillsIcon.astro";
 import SkillItem from "@/components/SkillItem.astro";
 import SoftSkills from "@/components/SoftSkills.astro";
 import Logos from "@/data/Skills.json";
+import TitleFormat from "./TitleFormat.astro";
 
 const LOGOS = Logos;
 ---
 
 <div class="flex flex-col md:flex-row justify-center">
-  <div class="mx-1">
-    <div class="flex mx-auto items-center">
-      <SkillsIcon class="stroke-black dark:stroke-white size-11" />
-      <span
-        data-translate-key="tecnical_skills"
-        class="ml-2 text-4xl text-[#333333] dark:text-white"
-        >Habilidades técnicas</span
-      >
-    </div>
+  <div data-aos="zoom-in-right">
+    <TitleFormat>
+      <h3 slot="section-title" class="flex justify-center items-center">
+        <SkillsIcon class="stroke-black dark:stroke-white size-11" />
+        <span data-translate-key="tecnical_skills" class="ml-2"
+          >Habilidades técnicas</span
+        >
+      </h3>
+    </TitleFormat>
 
-    <div class="flex flex-col justify-center items-center my-5">
+    <div class="flex flex-col justify-center items-center mb-5 mt-8">
       <div class="m-5">
         <h5
-          data-translate-key="learned"
-          class="text-3xl dark:text-yellow-200/90 mb-1 text-center"
+          data-translate-key="experienced"
+          class="text-3xl text-[#30609b] dark:text-yellow-200/90 mb-1 text-center"
         >
-          Aprendidas
+          Con experiencia
         </h5>
         <div
-          class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 items-center justify-center"
+          class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 items-center justify-center"
         >
           {
             LOGOS.logos.learned.map((logo) => (
-              <div class="h-28 w-32 my-3 mx-5">
+              <div class="h-24 w-28 my-8 mx-4 flex justify-center flex-col">
                 <SkillItem name={logo.name} alt={logo.alt} src={logo.src} />
               </div>
             ))
@@ -42,17 +43,17 @@ const LOGOS = Logos;
       <div class="m-5">
         <h5
           data-translate-key="learning"
-          class="text-3xl dark:text-yellow-200/90 mb-1 text-center"
+          class="text-3xl text-[#30609b] dark:text-yellow-200/90 mb-1 text-center"
         >
           Aprendiendo...
         </h5>
 
         <div
-          class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 items-center justify-center"
+          class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 items-center justify-center"
         >
           {
             LOGOS.logos.learning.map((logo) => (
-              <div class="h-28 w-32 my-3 mx-5">
+              <div class="h-24 w-28 my-3 mx-5">
                 <SkillItem name={logo.name} alt={logo.alt} src={logo.src} />
               </div>
             ))
@@ -61,19 +62,19 @@ const LOGOS = Logos;
       </div>
     </div>
   </div>
-  <div class="mx-1">
-    <div class="flex flex-col justify-center">
-      <h3
-        class="text-4xl text-[#333333] dark:text-white flex items-center justify-center"
-      >
-        <SoftSkillsIcon class="stroke-black dark:stroke-white size-11" />
-        <span data-translate-key="soft_skills" class="ml-2"
-          >Habilidades blandas</span
-        >
-      </h3>
-      <div class="mt-5 sm:mt-14">
+  <div class="mx-16 mt-10 md:mt-0" data-aos="zoom-in-left">
+    <d iv class="flex flex-col justify-center">
+      <TitleFormat>
+        <h3 slot="section-title" class="flex items-center justify-center">
+          <SoftSkillsIcon class="stroke-black dark:stroke-white size-11" />
+          <span data-translate-key="soft_skills" class="ml-2"
+            >Habilidades blandas</span
+          >
+        </h3>
+      </TitleFormat>
+      <div class="mt-3 sm:mt-14 flex justify-center">
         <SoftSkills />
       </div>
-    </div>
+    </d>
   </div>
 </div>

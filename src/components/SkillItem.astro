@@ -3,11 +3,11 @@ const { name, alt, src } = Astro.props;
 ---
 
 <div
-  class="relative cursor-pointer py-1 pb-10 px-2 m-1 border-[2px] border-solid border-[#222222] flex flex-col justify-center items-center bg-[#1a19199b]"
+  class="relative cursor-pointer py-1 pb-10 px-2 m-1 border-[2px] border-solid border-blue-900 dark:border-[#222222] flex flex-col justify-center items-center bg-white dark:bg-[#1a19199b]"
 >
   <img src={src} class="h-20" alt={alt} loading="lazy" />
   <div
-    class="fill-animation mt-2 text-white bg-light-gradient dark:bg-dark-gradient text-center absolute bottom-2 w-36 rotate-2"
+    class="fill-animation mt-2 text-white bg-light-gradient dark:bg-dark-gradient text-center absolute bottom-2 w-32 rotate-2"
   >
     {name}
   </div>

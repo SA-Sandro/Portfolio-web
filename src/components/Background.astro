@@ -1,102 +1,124 @@
 <div
-  class="circles absolute top-0 z-[-2] min-h-full w-screen dark:bg-neutral-950 dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(230,119,198,0.3),rgba(255,255,255,0))]
-  bg-[#d9d9d9] bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(100,230,198,0.3),rgba(255,255,255,0))] overflow-hidden"
+  class="circles absolute top-0 z-[-2] min-h-full w-screen dark:bg-neutral-950 dark:bg-[radial-gradient(ellipse_60%_180%_at_50%_-30%,rgba(230,119,198,0.3),rgba(255,255,255,0))]
+  bg-[#ffffff] bg-[radial-gradient(ellipse_50%_180%_at_50%_-20%,rgba(70,10,200,0.28),rgba(1050,100,100,0))] overflow-hidden"
 >
-  <li class="bg-[#e0f7e0b0] dark:bg-[rgba(226,220,147,0.9)]"></li>
-  <li class="bg-[#e0f7e0b0] dark:bg-[rgba(226,220,147,0.9)]"></li>
-  <li class="bg-[#e0f7e0b0] dark:bg-[rgba(226,220,147,0.9)]"></li>
-  <li class="bg-[#e0f7e0b0] dark:bg-[rgba(226,220,147,0.9)]"></li>
-  <li class="bg-[#e0f7e0b0] dark:bg-[rgba(226,220,147,0.9)]"></li>
-  <li class="bg-[#e0f7e0b0] dark:bg-[rgba(226,220,147,0.9)]"></li>
-  <li class="bg-[#e0f7e0b0] dark:bg-[rgba(226,220,147,0.9)]"></li>
-  <li class="bg-[#e0f7e0b0] dark:bg-[rgba(226,220,147,0.9)]"></li>
-  <li class="bg-[#e0f7e0b0] dark:bg-[rgba(226,220,147,0.9)]"></li>
-  <li class="bg-[#e0f7e0b0] dark:bg-[rgba(226,220,147,0.9)]"></li>
+  <li class="bg-[#e4a9ea9c] dark:bg-[rgba(226,220,147,0.9)]"></li>
+  <li class="bg-[#e4a9ea9c] dark:bg-[rgba(226,220,147,0.9)]"></li>
+  <li class="bg-[#e4a9ea9c] dark:bg-[rgba(226,220,147,0.9)]"></li>
+  <li class="bg-[#e4a9ea9c] dark:bg-[rgba(226,220,147,0.9)]"></li>
+  <li class="bg-[#e4a9ea9c] dark:bg-[rgba(226,220,147,0.9)]"></li>
+  <li class="bg-[#e4a9ea9c] dark:bg-[rgba(226,220,147,0.9)]"></li>
+  <li class="bg-[#e4a9ea9c] dark:bg-[rgba(226,220,147,0.9)]"></li>
+  <li class="bg-[#e4a9ea9c] dark:bg-[rgba(226,220,147,0.9)]"></li>
+  <li class="bg-[#e4a9ea9c] dark:bg-[rgba(226,220,147,0.9)]"></li>
+  <li class="bg-[#e4a9ea9c] dark:bg-[rgba(226,220,147,0.9)]"></li>
+  <li class="bg-[#e4a9ea9c] dark:bg-[rgba(226,220,147,0.9)]"></li>
+  <li class="bg-[#e4a9ea9c] dark:bg-[rgba(226,220,147,0.9)]"></li>
 </div>
 <style>
   .circles li {
     position: absolute;
     display: block;
     list-style: none;
-    animation: animate 20s linear infinite;
+    animation: animate 20s alternate infinite ease-out;
     bottom: -9.375rem;
   }
 
   .circles li:nth-child(1) {
-    left: 25%;
-    width: 5rem;
-    height: 5rem;
+    left: 5%;
+    width: 8rem;
+    height: 8rem;
     animation-delay: 0s;
+    animation-duration: 15s;
   }
 
   .circles li:nth-child(2) {
-    left: 10%;
-    width: 1.25rem;
-    height: 1.25rem;
-    animation-delay: 2s;
-    animation-duration: 12s;
+    left: 15%;
+    width: 6rem;
+    height: 6rem;
+    animation-delay: 3s;
+    animation-duration: 20s;
   }
 
   .circles li:nth-child(3) {
-    left: 70%;
-    width: 1.25rem;
-    height: 1.25rem;
-    animation-delay: 4s;
+    left: 25%;
+    width: 8rem;
+    height: 8rem;
+    animation-delay: 5s;
+    animation-duration: 25s;
   }
 
   .circles li:nth-child(4) {
-    left: 40%;
-    width: 3.75rem;
-    height: 3.75rem;
-    animation-delay: 0s;
-    animation-duration: 18s;
+    left: 35%;
+    width: 6rem;
+    height: 6rem;
+    animation-delay: 7s;
+    animation-duration: 15s;
   }
 
   .circles li:nth-child(5) {
-    left: 65%;
-    width: 1.25rem;
-    height: 1.25rem;
-    animation-delay: 0s;
+    left: 45%;
+    width: 6rem;
+    height: 6rem;
+    animation-delay: 9s;
+    animation-duration: 30s;
   }
 
   .circles li:nth-child(6) {
-    left: 75%;
-    width: 6.875rem;
-    height: 6.875rem;
-    animation-delay: 3s;
+    left: 55%;
+    width: 8rem;
+    height: 8rem;
+    animation-delay: 12s;
+    animation-duration: 20s;
   }
 
   .circles li:nth-child(7) {
-    left: 35%;
-    width: 9.375rem;
-    height: 9.375rem;
+    left: 65%;
+    width: 8rem;
+    height: 8rem;
     animation-delay: 7s;
+    animation-duration: 50s;
   }
 
   .circles li:nth-child(8) {
-    left: 50%;
-    width: 1.563rem;
-    height: 1.563rem;
-    animation-delay: 15s;
-    animation-duration: 45s;
+    left: 75%;
+    width: 6rem;
+    height: 6rem;
+    animation-delay: 3s;
+    animation-duration: 20s;
   }
 
   .circles li:nth-child(9) {
-    left: 20%;
-    width: 0.938rem;
-    height: 0.938rem;
-    animation-delay: 2s;
-    animation-duration: 35s;
+    left: 60%;
+    width: 8rem;
+    height: 8rem;
+    animation-delay: 6s;
+    animation-duration: 15s;
   }
 
   .circles li:nth-child(10) {
-    left: 85%;
-    width: 9.375rem;
-    height: 9.375rem;
-    animation-delay: 0s;
+    left: 80%;
+    width: 6rem;
+    height: 6rem;
+    animation-delay: 1s;
     animation-duration: 11s;
   }
 
+  .circles li:nth-child(11) {
+    left: 90%;
+    width: 8rem;
+    height: 8rem;
+    animation-delay: 4s;
+    animation-duration: 25s;
+  }
+
+  .circles li:nth-child(12) {
+    left: 30%;
+    width: 6rem;
+    height: 6rem;
+    animation-delay: 5s;
+    animation-duration: 10s;
+  }
   @keyframes animate {
     0% {
       transform: translateY(0) rotate(0deg);
@@ -104,7 +126,7 @@
     }
 
     100% {
-      transform: translateY(-100rem) rotate(720deg);
+      transform: translateY(-300rem) rotate(720deg);
       opacity: 0;
     }
   }

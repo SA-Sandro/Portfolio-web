@@ -4,7 +4,7 @@
     :href="CV"
     target="_blank"
     type="button"
-    class="rounded-full text-xs sm:text-base mx-1 px-6 py-1 border-2 border-[#6ec26e] dark:border-yellow-200/90 tracking-widest transition-all duration-100 ease-out hover:bg-green-400/90 dark:hover:bg-yellow-200/40 text-[#333333] dark:text-white"
+    class="rounded-full text-xs sm:text-base mx-1 px-6 py-1 border-2 border-[#4d1a57] dark:border-yellow-200/90 tracking-widest transition-all duration-100 ease-out hover:bg-[#AC96FF]/20 dark:hover:bg-yellow-200/40 text-[#333333] dark:text-white"
     id="cv-link"
     data-translate-key="viewCV"
   >

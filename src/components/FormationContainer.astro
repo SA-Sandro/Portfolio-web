@@ -1,15 +1,15 @@
 ---
 import Formation from "@/components/vue-components/Formation.vue";
 import BookIcon from "@/components/Icons/BookIcon.vue";
+import TitleFormat from "./TitleFormat.astro";
 ---
 
-<div class="p-5">
-  <h3
-    class="text-4xl text-[#333333] dark:text-white py-10 flex items-center justify-center"
-  >
-    <BookIcon class="hidden stroke-white dark:block size-11" />
-    <BookIcon class="block stroke-black dark:hidden size-11" />
-    <span class="ml-2" data-translate-key="titleFormation">Formación</span>
-  </h3>
+<div class="p-5" data-aos="fade-down">
+  <TitleFormat>
+    <h3 slot="section-title" class="flex items-center justify-center">
+      <BookIcon class="stroke-black dark:stroke-white size-11" />
+      <span class="ml-2" data-translate-key="titleFormation">Formación</span>
+    </h3>
+  </TitleFormat>
   <Formation client:only />
 </div>

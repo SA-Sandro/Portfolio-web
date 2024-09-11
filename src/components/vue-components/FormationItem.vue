@@ -1,4 +1,9 @@
 <template>
+  <time
+    class="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+  >
+    {{ formation.date }}
+  </time>
   <h5 class="text-lg text-[#39006C] dark:text-yellow-200/90">
     {{ formation.title }}
   </h5>
@@ -7,11 +12,6 @@
   >
     {{ formation.institution }}
   </h3>
-  <time
-    class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-  >
-    {{ formation.date }}
-  </time>
 </template>
 <script setup>
 const props = defineProps({

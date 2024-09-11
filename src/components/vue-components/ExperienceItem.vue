@@ -1,6 +1,6 @@
 <template>
   <time
-    class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+    class="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
   >
     {{ experience.date }}
   </time>
@@ -8,7 +8,7 @@
     {{ experience.title }}
   </h3>
   <p
-    class="mb-4 text-base font-normal text-pretty max-w-xl text-[#333333] dark:text-gray-200"
+    class="text-base font-normal text-pretty max-w-xl text-[#333333] dark:text-gray-200"
   >
     {{ experience.description }}
   </p>

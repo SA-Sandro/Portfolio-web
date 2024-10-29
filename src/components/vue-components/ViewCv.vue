@@ -21,9 +21,9 @@ const currentLang = ref<string>("");
 const setCV = (): void => {
   currentLang.value = localStorage.getItem("langLocalStorage") || "";
   if (currentLang.value === "es") {
-    CV.value = "files/cv_programador_ES.pdf";
+    CV.value = "files/developer_cv_es.pdf";
     return;
   }
-  CV.value = "files/cv_programador_EN.pdf";
+  CV.value = "files/developer_cv_en.pdf";
 };
 </script>

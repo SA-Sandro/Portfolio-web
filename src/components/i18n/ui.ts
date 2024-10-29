@@ -276,7 +276,7 @@ export const PROJECTS: Projects = {
       ropas que son fabricadas utilizando materiales y procesos eco-friendly.`,
       technologies: ["PHP", "MySql", "Bootstrap"],
       links: {
-        githubLink: "https://github.https://github.com/SA-Sandro/Tienda-Online",
+        githubLink: "https://github.com/SA-Sandro/Tienda-Online",
         pageLink: "",
       },
     },

@@ -35,7 +35,11 @@
       v-if="isHovered"
       class="absolute bg-gray-900/60 w-full h-full top-0 flex justify-center items-center cursor-pointer rounded-lg"
     >
-      <a href="" target="_blank">
+      <a
+        v-if="project.links.pageLink"
+        :href="project.links.pageLink"
+        target="_blank"
+      >
         <PageIcon />
       </a>
       <a :href="project.links.githubLink" target="_blank">
@@ -71,7 +75,8 @@ const project = props.project;
 </script>
 
 <style>
-.fade-enter-active, .fade-leave-active {
+.fade-enter-active,
+.fade-leave-active {
   transition: opacity 0.1s ease;
 }
 </style>

@@ -33,7 +33,7 @@ const LOGOS = Logos;
         >
           {
             LOGOS.logos.learned.map((logo) => (
-              <div class="h-24 w-28 my-8 mx-4 flex justify-center flex-col">
+              <div class="h-24 w-28 my-8 mx-5 sm:mx-10 flex justify-center flex-col">
                 <SkillItem name={logo.name} alt={logo.alt} src={logo.src} />
               </div>
             ))
@@ -53,7 +53,7 @@ const LOGOS = Logos;
         >
           {
             LOGOS.logos.learning.map((logo) => (
-              <div class="h-24 w-28 my-3 mx-10">
+              <div class="h-24 w-28 my-8 mx-5 sm:mx-10 flex justify-center flex-col">
                 <SkillItem name={logo.name} alt={logo.alt} src={logo.src} />
               </div>
             ))
@@ -62,7 +62,7 @@ const LOGOS = Logos;
       </div>
     </div>
   </div>
-  <div class="mx-0 sm:mx-16 mt-10 md:mt-0" data-aos="zoom-in-up">
+  <div class="mx-0 sm:mx-10 mt-10 md:mt-0" data-aos="zoom-in-up">
     <d iv class="flex flex-col justify-center">
       <TitleFormat>
         <h3 slot="section-title" class="flex items-center justify-center">

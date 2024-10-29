@@ -1,11 +1,11 @@
 <template>
   <div
     :key="divKey"
-    class="grid grid-cols-1 sm:grid-cols-2 mt-12 max-w-[70rem] mx-auto"
+    class="grid grid-cols-1 md:grid-cols-2 mt-12 mx-auto max-w-[30rem] md:max-w-[75rem]"
   >
     <article
       v-for="project in projects"
-      class="dark:bg-[#1C2128] bg-white rounded-xl mx-3 xs:mx-auto md:mx-10 my-5 sm:my-0 text-white relative max-w-[25rem] sm:max-w-[30rem]"
+      class="dark:bg-[#1C2128] bg-white rounded-xl my-5 text-white relative mx-2 sm:mx-5 "
       @mouseleave="hideLinksPanel"
       @mouseenter="showLinksPanel(project.id)"
     >

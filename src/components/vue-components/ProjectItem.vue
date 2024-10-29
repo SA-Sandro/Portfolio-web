@@ -5,7 +5,7 @@
     :alt="'Imagen del proyecto: ' + project.title"
     loading="lazy"
   />
-  <h3 class="px-4 pt-2 text-2xl dark:text-yellow-200 text-violet-900">
+  <h3 class="px-4 py-2 text-2xl dark:text-yellow-200 text-violet-900 font-bold">
     {{ project.title }}
   </h3>
   <div class="px-4 py-1 text-justify text-black dark:text-white">
@@ -16,7 +16,7 @@
   >
     <div
       v-for="technologie in project.technologies"
-      class="cursor-pointer mx-2 mt-1.5 lg:mt-0"
+      class="cursor-pointer mx-2 mt-1.5 lg:mt-0 my-3"
     >
       <div
         class="dark:bg-yellow-200 bg-violet-200 text-[1rem] text-black rounded-lg flex justify-center items-center py-0.5"

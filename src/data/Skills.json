@@ -27,6 +27,11 @@
         "src": "images/logos/React.png"
       },
       {
+        "name": "Nextjs",
+        "alt": "Logo Nextjs",
+        "src": "images/logos/Nextjs.png"
+      },
+      {
         "name": "PHP",
         "alt": "Logo PHP",
         "src": "images/logos/PHP.png"
@@ -55,6 +60,11 @@
         "name": "MySql",
         "alt": "Logo MySql",
         "src": "images/logos/MySql.png"
+      },
+      {
+        "name": "PostgreSQL",
+        "alt": "Logo PostgreSQL",
+        "src": "images/logos/PostgreSQL.png"
       },
       {
         "name": "Java",

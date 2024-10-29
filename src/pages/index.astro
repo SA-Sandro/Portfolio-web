@@ -10,6 +10,7 @@ import Projects from "@/components/vue-components/Projects.vue";
 import CodeIcon from "@/components/Icons/CodeIcon.vue";
 import TitleFormat from "@/components/TitleFormat.astro";
 import CertificatesList from "@/components/CertificatesList.astro";
+import GitHubIcon from "@/components/Icons/GitHubIcon.astro";
 ---
 
 <Layout title="Portfolio de Sandro || Desarrollador y Programador Web">
@@ -76,6 +77,21 @@ import CertificatesList from "@/components/CertificatesList.astro";
         </h3>
       </TitleFormat>
       <Projects client:only />
+      <div
+        class="mt-10 dark:bg-black/20 bg-blue-100/30 border-2 border-[#235da4] dark:border-yellow-200 rounded-lg mx-4 md:mx-auto max-w-full xs:max-w-2xl
+  py-2 px-5 mb-5 text-black dark:text-white text-xl sm:text-2xl text-center"
+      >
+        <div>
+          Si quieres ver más de mis proyectos, no dudes en visitar mi
+          repositorio Github
+        </div>
+        <a
+          href="https://github.com/SA-Sandro"
+          class="flex justify-center mt-5 animate-bounce"
+        >
+          <GitHubIcon class="size-10" />
+        </a>
+      </div>
     </SectionContainer>
   </main>
 

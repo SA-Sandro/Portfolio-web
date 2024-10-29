@@ -228,18 +228,55 @@ export const PROJECTS: Projects = {
       technologies: ["Astro", "Vue", "TypeScript", "Tailwind"],
       links: {
         githubLink: "https://github.com/SA-Sandro/Portfolio-web",
-        pageLink: "",
+        pageLink: "https://sandro-suarez-portfolio.netlify.app",
       },
     },
     {
       id: 2,
-      title: "Tienda Online || Green Clothes ",
-      image: "images/tienda.webp",
-      description: `Un E-commerce especializado en la venta de ropa ecológica. En cuanto a sus características más destacables, encontramos un sistema de inicio de sesión y de registro de usuario, 
-        un carrito con todos los pedidos añadidos... `,
-      technologies: ["PHP", "JavaScript", "Bootstrap", "MySql"],
+      title: "Innovadent || Clínica Dental",
+      image: "images/innovadent.webp",
+      description: `Innovadent es una clínica dental comprometida con la prestación de servicios dentales de alta calidad adaptados a las necesidades únicas de cada paciente.
+       Con su propio sitio web, Innovadent permite a los clientes concertar citas cómodamente en línea.`,
+      technologies: ["React", "TypeScript", "Tailwind", "Nextjs", "PostgreSQL"],
       links: {
-        githubLink: "",
+        githubLink: "https://github.com/SA-Sandro/Innovadent",
+        pageLink: "https://innovadent.vercel.app",
+      },
+    },
+    {
+      id: 3,
+      title: "Katapiercing: Professional Body Piercing",
+      image: "images/katapiercing.webp",
+      description: `Este sitio web es una landing page diseñada para un pequeño negocio de perforación de piercings, gestionado por mi cliente. 
+      Su objetivo es presentar el trabajo de Kata y destacar los distintos tipos de piercings que ofrece a sus clientes.`,
+      technologies: ["Astro", "Tailwind", "TypeScript"],
+      links: {
+        githubLink: "https://github.com/SA-Sandro/Piercing_webpage",
+        pageLink: "https://katapiercing.netlify.app/",
+      },
+    },
+    {
+      id: 4,
+      title: "Nature Register",
+      image: "images/Nature_Register.webp",
+      description: `Nature Register consiste en una aplicación de escritorio desarrollada en Java que te permite almacenar
+      y organizar todas tus observaciones de fauna y flora en una base de datos, para luego poder visualizarlas y filtrarlas 
+      según su nombre científico, familia, fecha de observación, localidad, etc.`,
+      technologies: ["Java", "Sqlite"],
+      links: {
+        githubLink: "https://github.com/SA-Sandro/Nature-Register",
+        pageLink: "",
+      },
+    },
+    {
+      id: 5,
+      title: "Green-Clothes: Tienda Online de ropa ecológica",
+      image: "images/Ecommerce.webp",
+      description: `Green-Clothes se trata de una página web dedicada a la venta de ropas ecológicas, es decir,
+      ropas que son fabricadas utilizando materiales y procesos eco-friendly.`,
+      technologies: ["PHP", "MySql", "Bootstrap"],
+      links: {
+        githubLink: "https://github.https://github.com/SA-Sandro/Tienda-Online",
         pageLink: "",
       },
     },
@@ -254,18 +291,55 @@ export const PROJECTS: Projects = {
       technologies: ["Astro", "Vue", "TypeScript", "Tailwind"],
       links: {
         githubLink: "https://github.com/SA-Sandro/Portfolio-web",
-        pageLink: "",
+        pageLink: "https://sandro-suarez-portfolio.netlify.app",
       },
     },
     {
       id: 2,
-      title: "Tienda Online || Green Clothes ",
-      image: "images/tienda.webp",
-      description:
-        "Un E-commerce especializado en la venta de ropa ecológica. ",
-      technologies: ["PHP", "JavaScript", "Bootstrap", "MySql"],
+      title: "Innovadent: A dental clinic website",
+      image: "images/innovadent.webp",
+      description: `Innovadent is a dental clinic committed to providing high-quality dental services tailored to each patient's unique needs. 
+        With its own website, Innovadent allows clients to conveniently schedule appointments online.`,
+      technologies: ["React", "TypeScript", "Tailwind", "Nextjs", "PostgreSQL"],
       links: {
-        githubLink: "",
+        githubLink: "https://github.com/SA-Sandro/Innovadent",
+        pageLink: "https://innovadent.vercel.app",
+      },
+    },
+    {
+      id: 3,
+      title: "Katapiercing: Professional Body Piercing",
+      image: "images/katapiercing.webp",
+      description: `This website is a landing page designed for a small piercing business managed by my client. 
+      Its purpose is to showcase Kata's work and highlight the various types of piercings she offers to her clients.`,
+      technologies: ["Astro", "Tailwind", "TypeScript"],
+      links: {
+        githubLink: "https://github.com/SA-Sandro/Piercing_webpage",
+        pageLink: "https://katapiercing.netlify.app/",
+      },
+    },
+    {
+      id: 4,
+      title: "Nature Register",
+      image: "images/Nature_Register.webp",
+      description: `Nature Register is a desktop application developed in Java that allows you to store and organize
+      all your observations of fauna and flora in a database, enabling you to view and filter them by scientific name,
+      family, date of observation, location, and more.`,
+      technologies: ["Java", "Sqlite"],
+      links: {
+        githubLink: "https://github.com/SA-Sandro/Nature-Register",
+        pageLink: "",
+      },
+    },
+    {
+      id: 5,
+      title: "Green-Clothes: Eco-Friendly Clothing Ecommerce",
+      image: "images/Ecommerce.webp",
+      description: `Green-Clothes is a website dedicated to selling eco-friendly clothing,
+      meaning garments crafted using sustainable materials and environmentally friendly processes.`,
+      technologies: ["PHP", "MySql", "Bootstrap"],
+      links: {
+        githubLink: "https://github.com/SA-Sandro/Tienda-Online",
         pageLink: "",
       },
     },

@@ -68,6 +68,8 @@ export const ui = {
     copy: "Copiar",
     copied: "Copiado",
     projectsSection: "Proyectos",
+    moreProjectsSection:
+      "Si quieres ver más de mis proyectos, no dudes en visitar mi repositorio Github",
   },
   en: {
     home: "Home",
@@ -124,6 +126,8 @@ export const ui = {
     copy: "Copy",
     copied: "Copied",
     projectsSection: "Projects",
+    moreProjectsSection:
+      "If you want to see more of my projects, don't doubt to visit my Github repository",
   },
 } as const;
 

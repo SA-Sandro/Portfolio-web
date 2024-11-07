@@ -55,6 +55,10 @@ export const ui = {
     cert_3_date: "Diciembre 2023",
     cert_3_link:
       "Ver <a target='_blank' href='https://www.freecodecamp.org/certification/fcc4010d557-eafe-4cb1-96f2-31d4ab5d077e/javascript-algorithms-and-data-structures'><span class='underline'>aquí</span></a>",
+    cert_4_title: "Python Essentials 1",
+    cert_4_date: "Noviembre de 2024",
+    cert_4_link:
+      "Ver <a target='_blank' href='https://www.credly.com/badges/036e57d3-a57f-4cb6-9bfc-5a7143116d12/public_url'><span class='underline'>aquí</span></a>",
     tecnical_skills: "Habilidades técnicas",
     soft_skills: "Habilidades blandas",
     learning: "Aprendiendo...",
@@ -113,6 +117,10 @@ export const ui = {
     cert_3_date: "December 2023",
     cert_3_link:
       "See <a target='_blank' href='https://www.freecodecamp.org/certification/fcc4010d557-eafe-4cb1-96f2-31d4ab5d077e/javascript-algorithms-and-data-structures'><span class='underline'>here</span></a>",
+    cert_4_title: "Python Essentials 1",
+    cert_4_date: "November 2024",
+    cert_4_link:
+      "See <a target='_blank' href='https://www.credly.com/badges/036e57d3-a57f-4cb6-9bfc-5a7143116d12/public_url'><span class='underline'>here</span></a>",
     tecnical_skills: "Tecnical skills",
     soft_skills: "Soft skills",
     learning: "Learning...",

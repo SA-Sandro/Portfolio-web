@@ -2,7 +2,7 @@
 import CertificationIcon from "./Icons/CertificationIcon.astro";
 ---
 
-<ol class="items-center sm:flex">
+<ol class="sm:grid grid-cols-2 lg:grid-cols-4">
   <li class="relative mb-6 sm:mb-0">
     <div class="flex items-center">
       <div
@@ -13,7 +13,9 @@ import CertificationIcon from "./Icons/CertificationIcon.astro";
       <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700">
       </div>
     </div>
-    <div class="bg-white border-2 border-black dark:bg-[#1C2128] p-5 m-3 rounded-md ml-1">
+    <div
+      class="bg-white border-2 border-black dark:bg-[#1C2128] p-5 m-3 rounded-md ml-1 h-60"
+    >
       <h3
         class="text-lg text-[#39006C] mt-1 dark:text-yellow-200/90"
         data-translate-key="cert_1_title"
@@ -53,7 +55,9 @@ import CertificationIcon from "./Icons/CertificationIcon.astro";
       <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700">
       </div>
     </div>
-    <div class="bg-white  border-2 border-black dark:bg-[#1C2128] p-5 m-3 rounded-md ml-1">
+    <div
+      class="bg-white border-2 border-black dark:bg-[#1C2128] p-5 m-3 rounded-md ml-1 h-60"
+    >
       <h3
         class="text-lg text-[#39006C] mt-1 dark:text-yellow-200/90"
         data-translate-key="cert_2_title"
@@ -93,7 +97,9 @@ import CertificationIcon from "./Icons/CertificationIcon.astro";
       <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700">
       </div>
     </div>
-    <div class="bg-white  border-2 border-black dark:bg-[#1C2128] p-5 m-3 rounded-md ml-1">
+    <div
+      class="bg-white border-2 border-black dark:bg-[#1C2128] p-5 m-3 rounded-md ml-1 h-60"
+    >
       <h3
         class="text-lg text-[#39006C] mt-1 dark:text-yellow-200/90"
         data-translate-key="cert_3_title"
@@ -121,6 +127,45 @@ import CertificationIcon from "./Icons/CertificationIcon.astro";
           src="images/FreeCodeCamp_logo.png"
           alt="Logo FreeCodeCamp"
         />
+      </div>
+    </div>
+  </li>
+  <li class="relative mb-6 sm:mb-0">
+    <div class="flex items-center">
+      <div
+        class="z-10 flex items-center justify-center w-10 h-10 bg-white rounded-full ring-2 dark:ring-yellow-400 ring-[#235da4] cursor-pointer"
+      >
+        <CertificationIcon class="stroke-black size-7" />
+      </div>
+      <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700">
+      </div>
+    </div>
+    <div
+      class="bg-white border-2 border-black dark:bg-[#1C2128] p-5 m-3 rounded-md ml-1 h-60"
+    >
+      <h3
+        class="text-lg text-[#39006C] mt-1 dark:text-yellow-200/90"
+        data-translate-key="cert_4_title"
+      >
+        Python Essentials 1
+      </h3>
+      <time
+        class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+        data-translate-key="cert_4_date">Noviembre 2024</time
+      >
+      <p
+        class="text-base font-normal text-black dark:text-white"
+        data-translate-key="cert_4_link"
+      >
+        <a
+          href="https://www.credly.com/badges/036e57d3-a57f-4cb6-9bfc-5a7143116d12/public_url"
+          >Ver<span class="underline">aquí</span></a
+        >
+      </p>
+      <div
+        class="flex justify-center items-center bg-white rounded-md mt-5 p-3"
+      >
+        <img class="h-9" src="images/cisco-logo.png" alt="Logo Cisco" />
       </div>
     </div>
   </li>

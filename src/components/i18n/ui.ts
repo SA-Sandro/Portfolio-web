@@ -233,14 +233,14 @@ export const PROJECTS: Projects = {
   es: [
     {
       id: 1,
-      title: "Green-Clothes: Tienda Online de ropa ecológica",
-      image: "images/Ecommerce.webp",
-      description: `Green-Clothes se trata de una página web dedicada a la venta de ropas ecológicas, es decir,
-      ropas que son fabricadas utilizando materiales y procesos eco-friendly.`,
-      technologies: ["PHP", "MySql", "Bootstrap"],
+      title: "Katapiercing: Professional Body Piercing",
+      image: "images/katapiercing.webp",
+      description: `Este sitio web es una landing page diseñada para un pequeño negocio de perforación de piercings, gestionado por mi cliente. 
+      Su objetivo es presentar el trabajo de Kata y destacar los distintos tipos de piercings que ofrece a sus clientes.`,
+      technologies: ["Astro", "Tailwind", "TypeScript"],
       links: {
-        githubLink: "https://github.com/SA-Sandro/Tienda-Online",
-        pageLink: "",
+        githubLink: "https://github.com/SA-Sandro/Piercing_webpage",
+        pageLink: "https://katapiercing.netlify.app/",
       },
     },
     {
@@ -257,14 +257,14 @@ export const PROJECTS: Projects = {
     },
     {
       id: 3,
-      title: "Katapiercing: Professional Body Piercing",
-      image: "images/katapiercing.webp",
-      description: `Este sitio web es una landing page diseñada para un pequeño negocio de perforación de piercings, gestionado por mi cliente. 
-      Su objetivo es presentar el trabajo de Kata y destacar los distintos tipos de piercings que ofrece a sus clientes.`,
-      technologies: ["Astro", "Tailwind", "TypeScript"],
+      title: "Green-Clothes: Tienda Online de ropa ecológica",
+      image: "images/Ecommerce.webp",
+      description: `Green-Clothes se trata de una página web dedicada a la venta de ropas ecológicas, es decir,
+      ropas que son fabricadas utilizando materiales y procesos eco-friendly.`,
+      technologies: ["PHP", "MySql", "Bootstrap"],
       links: {
-        githubLink: "https://github.com/SA-Sandro/Piercing_webpage",
-        pageLink: "https://katapiercing.netlify.app/",
+        githubLink: "https://github.com/SA-Sandro/Tienda-Online",
+        pageLink: "",
       },
     },
     {

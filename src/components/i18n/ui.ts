@@ -233,14 +233,14 @@ export const PROJECTS: Projects = {
   es: [
     {
       id: 1,
-      title: "Portfolio Web personal",
-      image: "images/portfolio.webp",
-      description: `Un pequeño portfolio donde, además de contaros un poco más sobre mí, muestro las tecnologías en las que tengo experiencia y los proyectos en los que he ido trabajando. 
-        Destacar que, se usa LocalStorage para perdurar el estado de la aplicación y el estándar i18n para la disponibilidad de la página en Inglés y Español.`,
-      technologies: ["Astro", "Vue", "TypeScript", "Tailwind"],
+      title: "Green-Clothes: Tienda Online de ropa ecológica",
+      image: "images/Ecommerce.webp",
+      description: `Green-Clothes se trata de una página web dedicada a la venta de ropas ecológicas, es decir,
+      ropas que son fabricadas utilizando materiales y procesos eco-friendly.`,
+      technologies: ["PHP", "MySql", "Bootstrap"],
       links: {
-        githubLink: "https://github.com/SA-Sandro/Portfolio-web",
-        pageLink: "https://sandro-suarez-portfolio.netlify.app",
+        githubLink: "https://github.com/SA-Sandro/Tienda-Online",
+        pageLink: "",
       },
     },
     {
@@ -282,28 +282,28 @@ export const PROJECTS: Projects = {
     },
     {
       id: 5,
-      title: "Green-Clothes: Tienda Online de ropa ecológica",
-      image: "images/Ecommerce.webp",
-      description: `Green-Clothes se trata de una página web dedicada a la venta de ropas ecológicas, es decir,
-      ropas que son fabricadas utilizando materiales y procesos eco-friendly.`,
-      technologies: ["PHP", "MySql", "Bootstrap"],
+      title: "Portfolio Web personal",
+      image: "images/portfolio.webp",
+      description: `Un pequeño portfolio donde, además de contaros un poco más sobre mí, muestro las tecnologías en las que tengo experiencia y los proyectos en los que he ido trabajando. 
+        Destacar que, se usa LocalStorage para perdurar el estado de la aplicación y el estándar i18n para la disponibilidad de la página en Inglés y Español.`,
+      technologies: ["Astro", "Vue", "TypeScript", "Tailwind"],
       links: {
-        githubLink: "https://github.com/SA-Sandro/Tienda-Online",
-        pageLink: "",
+        githubLink: "https://github.com/SA-Sandro/Portfolio-web",
+        pageLink: "https://sandro-suarez-portfolio.netlify.app",
       },
     },
   ],
   en: [
     {
       id: 1,
-      title: "Personal Portfolio Web",
-      image: "images/portfolio.webp",
-      description: `A small portfolio where, besides telling you a little more about me, I show the technologies in which I have experience and the projects in which I have been working. 
-        I would like to point out that LocalStorage is used to maintain the state of the application and the i18n standard for the availability of the page in English and Spanish.`,
-      technologies: ["Astro", "Vue", "TypeScript", "Tailwind"],
+      title: "Katapiercing: Professional Body Piercing",
+      image: "images/katapiercing.webp",
+      description: `This website is a landing page designed for a small piercing business managed by my client. 
+      Its purpose is to showcase Kata's work and highlight the various types of piercings she offers to her clients.`,
+      technologies: ["Astro", "Tailwind", "TypeScript"],
       links: {
-        githubLink: "https://github.com/SA-Sandro/Portfolio-web",
-        pageLink: "https://sandro-suarez-portfolio.netlify.app",
+        githubLink: "https://github.com/SA-Sandro/Piercing_webpage",
+        pageLink: "https://katapiercing.netlify.app/",
       },
     },
     {
@@ -320,14 +320,14 @@ export const PROJECTS: Projects = {
     },
     {
       id: 3,
-      title: "Katapiercing: Professional Body Piercing",
-      image: "images/katapiercing.webp",
-      description: `This website is a landing page designed for a small piercing business managed by my client. 
-      Its purpose is to showcase Kata's work and highlight the various types of piercings she offers to her clients.`,
-      technologies: ["Astro", "Tailwind", "TypeScript"],
+      title: "Green-Clothes: Eco-Friendly Clothing Ecommerce",
+      image: "images/Ecommerce.webp",
+      description: `Green-Clothes is a website dedicated to selling eco-friendly clothing,
+      meaning garments crafted using sustainable materials and environmentally friendly processes.`,
+      technologies: ["PHP", "MySql", "Bootstrap"],
       links: {
-        githubLink: "https://github.com/SA-Sandro/Piercing_webpage",
-        pageLink: "https://katapiercing.netlify.app/",
+        githubLink: "https://github.com/SA-Sandro/Tienda-Online",
+        pageLink: "",
       },
     },
     {
@@ -345,14 +345,14 @@ export const PROJECTS: Projects = {
     },
     {
       id: 5,
-      title: "Green-Clothes: Eco-Friendly Clothing Ecommerce",
-      image: "images/Ecommerce.webp",
-      description: `Green-Clothes is a website dedicated to selling eco-friendly clothing,
-      meaning garments crafted using sustainable materials and environmentally friendly processes.`,
-      technologies: ["PHP", "MySql", "Bootstrap"],
+      title: "Personal Portfolio Web",
+      image: "images/portfolio.webp",
+      description: `A small portfolio where, besides telling you a little more about me, I show the technologies in which I have experience and the projects in which I have been working. 
+        I would like to point out that LocalStorage is used to maintain the state of the application and the i18n standard for the availability of the page in English and Spanish.`,
+      technologies: ["Astro", "Vue", "TypeScript", "Tailwind"],
       links: {
-        githubLink: "https://github.com/SA-Sandro/Tienda-Online",
-        pageLink: "",
+        githubLink: "https://github.com/SA-Sandro/Portfolio-web",
+        pageLink: "https://sandro-suarez-portfolio.netlify.app",
       },
     },
   ],

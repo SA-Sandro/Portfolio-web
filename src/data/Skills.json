@@ -107,6 +107,11 @@
         "name": "Docker",
         "alt": "Logo Docker",
         "src": "images/logos/Docker.png"
+      },
+      {
+        "name": "Sprint Boot",
+        "alt": "Logo Spring Boot",
+        "src": "images/logos/SpringBoot.png"
       }
     ]
   }
